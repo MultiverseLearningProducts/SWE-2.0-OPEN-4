@@ -1,9 +1,9 @@
 Learning Objectives:
 
-Variables vs Constants [ ]
-let and const [ ]
-console.log [ ]
-expressions [ ]
+Variables vs Constants [x]
+let and const [x]
+console.log [x]
+expressions [x]
 Comments [ ]
 
 
@@ -19,7 +19,7 @@ Data primitives [x]
         5. Symbol - New data primitive (ES6) - it is a unique and immutable value that is intended to be used as identifiers for object properties.
         6. Null - represents no value or no object.
 
-Variables vs Constants [ ]
+Variables vs Constants [x]
 
     What is a variable?
         - A container that holds a value.
@@ -33,7 +33,7 @@ Variables vs Constants [ ]
         - Use a constant when you expect the value to stay static (importing modules, port number)
 
 
-let and const [ ]
+let and const [x]
 
     What is the difference between 'let' and 'const'?
         - 'let' - helps us create a variable that we can reassign.
@@ -55,16 +55,25 @@ Expressions and evaluation [ ]
 
     What are expressions in JavaScript?
 
+    - Expressions is a piece of code that can be evaluated to a value.
+    - Expressions can be a combination of literals, variables, operators, and function calls. 
 
-    How does JavaScript evaluate expressions?
 
-
+other examples:
+ 3 + 4
+ "Hello, " + "world!"
+ Math.sqrt(16)
+ myVariable * 2
+ (5 > 2) ? "Yes" : "No"
     
-console.log [ ]
+console.log [x]
     What is the console.log() function in JavaScript?
     When is it useful to use console.log() in your code?
     Can you give an example of how you would use console.log() in a script?
 
-Comments [ ]
+Comments [x]
     What are comments in JavaScript?
     How to write a comment in JS?
+
+    - // to write a line
+    - /* */ to write multiple lines
