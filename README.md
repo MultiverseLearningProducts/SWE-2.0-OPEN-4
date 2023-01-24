@@ -11,7 +11,7 @@ Materials for the SWE2.0(Open)4-US cohort
 |Day|Slides/Notes|Recordings|Challenges|
 |-----| ------------- |---------------------|----------|
 |W1D1|[Bootcamp Orientation](), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
-|W1D2|[Variables, constants, expressions](), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
+|W1D2|[Variables, constants, expressions](01-Week1/2-variables-constants-expressions), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
 |W1D3|[Data primitives, conditionals](), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
 |W1D4|[Functions, debugging](), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
 |W1D5|[Problem Set](), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
