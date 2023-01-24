@@ -1,0 +1,55 @@
+Learning Objectives:
+
+Variables vs Constants [ ]
+let and const [ ]
+console.log [ ]
+expressions [ ]
+Comments [ ]
+
+
+
+Introduction:
+
+Data primitives [ ]
+    What are the 6 primitive data types in Javascript?
+
+Variables vs Constants [ ]
+
+    What is a variable?
+
+    What is the main difference between variables and constants in JavaScript?
+
+    When would you use a variable and when would you use a constant?
+     
+
+
+let and const [ ]
+
+    What is the difference between 'let' and 'const'?
+
+    How do we declare a variable using the keyword 'let' and 'const'?
+        
+
+    What is the difference between using let and const when declaring a variable?
+        
+
+    How do we reassign a variable?
+        
+   
+Expressions and evaluation [ ]
+
+    What are expressions in JavaScript?
+
+
+    How does JavaScript evaluate expressions?
+
+
+    
+console.log [ ]
+    What is the console.log() function in JavaScript?
+    When is it useful to use console.log() in your code?
+    Can you give an example of how you would use console.log() in a script?
+
+Comments [ ]
+    What are comments in JavaScript?
+    How to write a comment in JS?
