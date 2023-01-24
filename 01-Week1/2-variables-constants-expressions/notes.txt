@@ -10,8 +10,14 @@ Comments [ ]
 
 Introduction:
 
-Data primitives [ ]
+Data primitives [x]
     What are the 6 primitive data types in Javascript?
+        1. Numbers 
+        2. Strings - Are a sequence of characters. They are used to represent text and are enclosed in quotation marks (double or single is ok).
+        3. Boolean - Represents true or false values. They are often used in conditions and control flow.
+        4. Undefined - A variable that is declared but not assigned a value. It's assigned the value of 'undefined'
+        5. Symbol - New data primitive (ES6) - it is a unique and immutable value that is intended to be used as identifiers for object properties.
+        6. Null - represents no value or no object.
 
 Variables vs Constants [ ]
 
