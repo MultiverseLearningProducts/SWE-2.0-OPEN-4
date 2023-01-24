@@ -22,25 +22,34 @@ Data primitives [x]
 Variables vs Constants [ ]
 
     What is a variable?
+        - A container that holds a value.
 
     What is the main difference between variables and constants in JavaScript?
+        - A variable is a container that holds a value that you can reassign.
+        - A constant is a container that holds a value that you cannot reassign (change).
 
     When would you use a variable and when would you use a constant?
-     
+        - Use a variable when you expect the value to change (score in a game, users age, birthday)
+        - Use a constant when you expect the value to stay static (importing modules, port number)
 
 
 let and const [ ]
 
     What is the difference between 'let' and 'const'?
+        - 'let' - helps us create a variable that we can reassign.
+        - 'const' - helps us create a variable that we cannot reassign.
 
     How do we declare a variable using the keyword 'let' and 'const'?
-        
+        - use the keyword 'let' followed by a name of the variable -> equal sign -> data
+        - use the 'const' keyword followed by a name for the variable, followed by the data
 
     What is the difference between using let and const when declaring a variable?
-        
+        - let creates a variable that you can change
+        - const creates a variable that you cannot change
 
     How do we reassign a variable?
-        
+        - you can only reassign let variables.
+        - To reassign, simple just write the name of the let variable followed by = and the new value
    
 Expressions and evaluation [ ]
 
