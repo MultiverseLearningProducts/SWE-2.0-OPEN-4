@@ -1,33 +1,76 @@
 lesson Objectives
 
-data primitives review []
+data primitives review [x]
 control flow []
 comparison operators []
 logical operators []
 
 
 ---------------------------------------------------------
-Control Flow []
+Control Flow [x]
     1. What is control flow? Provide an example of control flow.
+        -Control flow is the way a program makes decisions and chooses which instructions to execute next.
+        -Control flow statements if, else, else if - these will help us decide on which part of our code gets run and which part gets ignored.
+
     2. What are conditional statements?
+        - A conditional statement is a type of control flow that allows a program to make decisions based on certain conditions. They are used to execute a block of code if a certain condition is met and skip a block of code if the condition is false
 
 ---------------------------------------------------------
-Comparison operators []
+Comparison operators [x]
     1. What are the comparison operators in Javascript?
+        1. == (equal to)
+        2. != (not equal to)
+        3. === (strictly equal to)
+        4. !== (strictly not equal to)
+        5. > (greater than)
+        6. < (less than)
+        7. >= (greater than or equal to)
+        8. <= (less than or equal to)
+
     2. What are comparison operators used for?
+        - Comparison operators are used to compare values or variables and make decisions based on the outcome of the comparison.
+
     3. Provide an example of how to use comparison operators. (demo)
-    4. Provide an example of how to use comparison operators using control flow. (demo)
+        - What is the difference between == and ===
+            - == only compares the value
+            - === compares both value and datatype
+    4. Provide an example of how to use comparison operators using control flow. (demo) [x]
 
 ---------------------------------------------------------
 Logical operators []
 
     1. What are the logical operators?
-    2. What are logical operators used for?
+        - They are used in JS to combine multiple conditions in a single statement
+    2. What are the logical operators?
+        && - AND
+        || - OR
     3. How are logical operators evaulated?
+        && (T && T) = T
+        && (T && F) = F
+        && (F && T) = F
+        && (F && F) = F
+
+        || (T || F) = T
+        || (T || T) = T
+        || (F || T) = T
+        || (F || F) = F
 
 ** Pair Programming Exercise **       
 ---------------------------------------------------------
+Scenario
+You are the bouncer of a fancy club and you have to check the age of the customers before they can enter. Your task is to create a JavaScript program that checks the age of the customers and decides whether they are allowed to enter the club or not. If they are of age and allowed to enter the club, the program will then check how much money they brought in and decide if they will have a good time at the club or not.
 
+Instructions
+
+1.Create a JavaScript program that uses conditional statements (if, else if, else) to check the age of the customers.
+2.Create a variable for the customer's age and another variable for the amount of money they brought in.
+3.Use comparison operators to evaluate the customer's age and determine if they are over 21 and can enter the club, or if they are under 21 and cannot enter the club.
+4.If the customer is over 21, use another comparison operator to check if they brought in enough money to have a good time at the club,
+5.Print out a message that says "Welcome to the club!" if the customer is over 21 and has enough money, "Welcome to the club, but have a budget-friendly night" if they are over 21 but don't have enough money or "Sorry, you are not old enough to enter" if the customer is under 21.
+
+Example
+Customer 1: age 23 and brought in $100
+Customer 2: age 18 and brought in $50
 
 
 
