@@ -62,15 +62,6 @@ if(grade === "A") {
 
 
 
-
-
-
-
-
-
-
-
-
 //Comparison Operators
 // let height = 100
 
@@ -93,6 +84,14 @@ if(grade === "A") {
 
 
 //Logical Operators
+let budget = 3000
+let passport = true
+
+     //F        &&      T 
+(budget >= 4000 && passport === true) //false
+
+    //F         ||     //T 
+(budget >= 4000 || passport === true) //true
 
 
 
