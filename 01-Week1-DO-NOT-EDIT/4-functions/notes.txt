@@ -1,0 +1,22 @@
+-DO NOT EDIT COPY OVER TO YOUR PERSONAL FOLDER FIRST-
+
+Learning Objectives
+
+- Learn how to write a function and understand its syntax[]
+- Function Expressions []
+- Arrow functions []
+- How to use functions in functions []
+
+---------------------------------------------------
+- Learn how to write a function and understand its syntax []
+
+    1. What is a function?
+        
+    2. What is a return statement?
+    
+    3. How do you write a function? Are there other ways?
+
+    4. How do you use a function?
+
+    **Pair Exercises**
+----------------------------------------------------
