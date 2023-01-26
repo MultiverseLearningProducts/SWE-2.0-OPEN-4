@@ -16,4 +16,93 @@ Customer 2: age 18 and brought in $50
 To have fun, you should bring in at least 100.
 
 */
+//camelCase
+let customerOneAge = 23
+let customerOneMoney = 100
+
+let customerTwoAge = 28
+let customerTwoMoney = 50
+
+
+//conditional statement
+// 1. if the person is over 21 and brought enough money -> //message 1 [x]
+// 2. if the person is over 21 but did not bring enough -> //message 2 [x]
+// 3. if the person is under 21 they can't enter the club -> //message 3 [x]
+
+
+function checkAgeAndBudget(age, budget) {
+    if(age >= 21 && budget >= 100) {
+        console.log("Welcome to the club!")
+    } else if(age >= 21 && budget <= 100) {
+        console.log("Welcome to the club, but have a budget-friendly night")
+    } else {
+        console.log("Cannot enter the club")
+    }
+}
+
+checkAgeAndBudget(customerTwoAge, customerTwoMoney)
+
+
+
+
+//Function syntax
+// function functionName(parameters) {
+//     //function definition 
+// }
+
+// let person = 'Aaron'
+// let money = 300
+
+// const personTwo = 'Nathan'
+// let moneyTwo = 400
+
+// function sayHello(name) {
+//     console.log("hello ", name)
+// }
+
+// //To use a function we need to invoke it 
+// sayHello(person)
+
+// //Write a function that will double Aaron's money and let Aaron know that his money is doubled!
+
+// function doubleMoney(money) {
+//     return money * 2
+// }
+
+
+// function doubleAaronsMoney(moneyAmount, name) {
+//     let doubledMoney = doubleMoney(moneyAmount)
+//     console.log('Wow ', name, ' your money is now doubled: ', doubledMoney)
+// }
+
+
+// doubleAaronsMoney(moneyTwo, personTwo) //400, 'Nathan'
+
+
+//Arrow functions
+const nameOfFunction = (parameters) => {
+    //function definition
+}
+
+//function declaration
+// function doubleMoney(money) {
+//     return money * 2
+// }
+
+const doubleMoney = (money) => {
+    return money * 2
+}
+
+
+// function doubleAaronsMoney(moneyAmount, name) {
+//     let doubledMoney = doubleMoney(moneyAmount)
+//     console.log('Wow ', name, ' your money is now doubled: ', doubledMoney)
+// }
+
+const doubleAaronsMoney = (moneyAmount, name) => {
+    let doubleMoney = doubleMoney(moneyAmount)
+    console.log('Wow ', name, ' your money is now doubled: ', doubledMoney)
+}
+
+
 

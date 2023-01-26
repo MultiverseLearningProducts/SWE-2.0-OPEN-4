@@ -11,12 +11,18 @@ Learning Objectives
 - Learn how to write a function and understand its syntax []
 
     1. What is a function?
-        
+        - a function is a block of code that can be reused multiple times.
+        - function functionName(parameter) {
+            //your function definition
+        }
+        - parameters represent the information that you eventually want to use inside of your function
+        - to run a function, you simply write the name of the function with parenthesis. If the function requires parameters, you 'pass' in an argument into the parenthesis.
     2. What is a return statement?
-    
+        - return allows us to get the result from our function
     3. How do you write a function? Are there other ways?
-
+        -Arrow function notation
     4. How do you use a function?
-
+        - you can use a function by invoking it by writing the name of the function and a parenthesis next to the name.
+        nameOfFunction(arugument1, argument2, etc)
     **Pair Exercises**
 ----------------------------------------------------
