@@ -10,10 +10,10 @@ Materials for the SWE2.0(Open)4-US cohort
 
 |Day|Slides/Notes|Recordings|Challenges|
 |-----| ------------- |---------------------|----------|
-|W1D1|[Bootcamp Orientation](), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
-|W1D2|[Variables, constants, expressions](01-Week1/2-variables-constants-expressions), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
-|W1D3|[Data primitives, conditionals](01-Week1-DO-NOT-EDIT/3-data-primitives-conditionals), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
-|W1D4|[Functions, debugging](01-Week1-DO-NOT-EDIT/4-functions), [Activity](01-Week1-DO-NOT-EDIT/4-functions/functionPractice.js), [Learning Squads]()| [Recording]() Passcode:  ||
+|W1D1|[Bootcamp Orientation](), [Activity](), [Learning Squads]()| [Recording](https://multiverse-io.zoom.us/rec/share/67FLG1Bfrl-KpBt_NwIKYZkLkWQmJJkczLlv_yU3X2pdJXHrXZ3xKmzSwP7NwvbU.pI1O2wmgoHSRqA5V) Passcode: BXaH$0zc ||
+|W1D2|[Variables, constants, expressions](01-Week1/2-variables-constants-expressions), [Activity](), [Learning Squads]()| [Recording](https://multiverse-io.zoom.us/rec/share/s1t2X2Fg9v3k3Bicd7bbF6wFV3oUwr6lyJpCnypjHnywjxWc4GyK03biLLRXiTkI.32_XauJLdXQ-pvx5) Passcode: L#hA1^+P ||
+|W1D3|[Data primitives, conditionals](01-Week1-DO-NOT-EDIT/3-data-primitives-conditionals), [Activity](), [Learning Squads]()| [Recording](https://multiverse-io.zoom.us/rec/share/QL0zV8Etjcu3s455MVx4MUYaObUTIFz7HUlhM-U78XZS5y-2nTJIzV0CjnZrsh5-.kX-GrQzDvDuF24Ak) Passcode: 7aWDgS=U ||
+|W1D4|[Functions, debugging](01-Week1-DO-NOT-EDIT/4-functions), [Activity](01-Week1-DO-NOT-EDIT/4-functions/functionPractice.js), [Learning Squads]()| [Recording](https://multiverse-io.zoom.us/rec/share/ZjmZQmqlhvHpMqPNQbPj_e3z3EZc4lwZRK48K3PxQqcWU5HjQZnqLy8Ou-UDQIE.XxdK-KFo_Z_eT5cG) Passcode: 8#tT9MSg ||
 |W1D5|[Problem Set](), [Activity](), [Learning Squads]()| [Recording]() Passcode:  ||
 
 ---
