@@ -1,0 +1,32 @@
+Lesson Objectives:
+
+1. Learn about type coercion []
+2. Learn about Truthiness and Falsiness []
+3. Learn about Scopes []
+
+--------------------------------------------------------
+type coercion []
+  1. What is type coercion? Provide an example of implicit and explicit type coercion.
+
+  2. Review: What is the difference between double equals (==) and triple equals (===)?
+
+--------------------------------------------------------
+truthiness and falsiness []
+  1. What happens when a value is coerced to a boolean?
+
+  2. What values are considered truthy?
+
+  3. What values are considered falsey?
+
+  4. How can we use '!' to coerce a value to a boolean that reflects its truthiness?
+
+--------------------------------------------------------
+scopes []
+  1. What does scope mean outside of programming? What would this mean in a programming context?
+
+  2. What is functional scope? How do we define a variable in functional scope?
+
+  3. What is block scope? How do we define a variable in block scope?
+
+  4. What is global scope? How do we define a variable in global scope?
+
