@@ -1,0 +1,19 @@
+Lesson Objectives:
+
+1. What are Loops []
+2. Learn about different types of for loops. []
+3. Learn about while loops. []
+4. Learn about what causes infinite loops []
+
+
+--------------------------------
+What are Loops []
+
+--------------------------------
+Learn about different types of for loops. []
+
+--------------------------------
+Learn about while loops. []
+
+--------------------------------
+Learn about what causes infinite loops []
