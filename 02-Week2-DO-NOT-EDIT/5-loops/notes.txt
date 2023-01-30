@@ -8,9 +8,15 @@ Lesson Objectives:
 
 --------------------------------
 What are Loops []
-
+    - loops in programming helps us repeat a set of instructions a specific number of times. It helps us automate repetitive tasks.
 --------------------------------
 Learn about different types of for loops. []
+    - For-Loop 
+            //start Point    end Point         pattern
+        for(let i = start; i <= stoppingPoint; i++) {
+            //repetitive task
+        }
+    
 
 --------------------------------
 Learn about while loops. []
