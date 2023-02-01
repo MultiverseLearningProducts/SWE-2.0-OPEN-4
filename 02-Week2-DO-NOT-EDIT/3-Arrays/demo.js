@@ -69,8 +69,9 @@ arr[0]
 arr[arr.length - 1]
 
 
-
+//--------------------------------------------------------------------//
 //COMMON ARRAY METHODS
+
 // push() - adds elements to the end of the array
 const arr1 = [1, 'two', false];
 arr1.push(3,'four', true) // [1, 'two', false, 3,'four', true]
@@ -107,3 +108,49 @@ const newArr = arrA.concat(arrB)
 // join() - joins all elements of an array into a string.
 const toJoinArr = ['I','want','to','be','a','sentence']
 console.log(toJoinArr.join(' '))
+
+//--------------------------------------------------------------------//
+//Slightly more advanced methods
+
+// splice() - adds or removes elements anywhere in the array
+//.splice(startIdx, deleteCount, item1, item2,...itemN)
+
+//add an item using splice()
+//                   0    1   2   3   4
+const arrOriginal = ['a','b','c','d','e']
+arrOriginal.splice(2, 0, 'HELLO!')
+//console.log(arrOriginal)
+
+//delete an element using .splice()
+//                    0   1   2   3   4
+const arrToDelete = ['a','b','c','d','e']
+arrToDelete.splice(1, 2)
+//console.log(arrToDelete) //[ 'a', 'd', 'e' ]
+
+
+// slice() - returns a new array with a portion of the original array
+            //             0   1   2   3  4
+const arrSliceOriginal = ['a','b','c', 4, 5]
+//.slice(startIdx, endIdx(not inclusive))
+const newSlicedArr = arrSliceOriginal.slice(1,4) // ['b','c', 4]
+console.log('SLICED ARRAY! ', newSlicedArr)
+
+//.map()
+const arrToMap = ['Aaron', 'Rachel', 'Axl', 'Collin', 'Fatoumata', 'Kim']
+const greetingArr = arrToMap.map((name, idx) => {
+        return `Hello ${name}`
+})
+// console.log('arrToMap = ', arrToMap)
+// console.log('greetingArr = ', greetingArr)
+
+
+//.forEach() - mutates our original array
+//                  0         1        2
+const arrNames = ['Aaron', 'Rachel', 'Axl']
+
+arrNames.forEach((name, idx) => {
+        //reassign value that lives in that index
+        arrNames[idx] = `Hello ${name}`
+})
+
+console.log('ARRNAMES = ', arrNames)
