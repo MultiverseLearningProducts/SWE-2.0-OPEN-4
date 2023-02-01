@@ -9,16 +9,25 @@ Lesson Objectives
 1. To understand what an array is in JavaScript.
 
     1. Can you explain what an array is and its purpose in JavaScript?
+        - An array in JS is a collection of values that are stored in a single variable.
+        - An array in JS can store multiple values of different datatypes such as: Number, strings, even other arrays, etc.
 
 -------------------------------------------------------
-2. To be able to create, modify and manipulate arrays.
+2. To be able to create, modify and manipulate arrays. [x]
 
     1. How do you create an array in JavaScript and what is the syntax for it?
+        - we declare a variable with a name followed by an = and square brackets
+            - const nameOfArray = []
 
-    2. Can you give examples of methods to modify and manipulate arrays in JavaScript, such as adding or removing elements?
+        - To access elements in an array, we write the name of the array followed by square brackets and the index.
+
+    2. Can you give examples of methods to modify and manipulate arrays in JavaScript, such as adding or removing elements? 
 
         Common Property:
-        .length
+        .length - return a number that represents the number of elements in our array
+
+            - mostly used to determine the stop boundary when we iterate through and array
+            - arr.length - 1
 
         -------------- 
         push() - adds elements to the end of the array
