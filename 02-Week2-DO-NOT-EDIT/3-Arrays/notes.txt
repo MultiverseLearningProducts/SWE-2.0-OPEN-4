@@ -21,6 +21,7 @@ Lesson Objectives
 
         Common Property:
         .length
+        
         -------------- 
         push() - adds elements to the end of the array
         pop() - removes the last element of the array
@@ -29,7 +30,6 @@ Lesson Objectives
         reverse() - reverses the order of the elements in the array
         concat() - combines two or more arrays into a new array
         join() - joins all elements of an array into a string.
-        sort() - sorts the elements of the array
         --------------
         splice() - adds or removes elements anywhere in the array
         slice() - returns a new array with a portion of the original array
@@ -38,7 +38,10 @@ Lesson Objectives
         --------------
         forEach() - method in JavaScript executes a provided function once for each array element. Unlike map(), forEach() does not return a new array and instead performs an operation for each element in the array.
         --------------
-        reduce() - The reduce() method in JavaScript is an array method that reduces the elements of an array to a single value by applying a callback function to each element and maintaining an accumulator.
+        Extension:
+
+        ** sort() - sorts the elements of the array   
+        ** reduce() - The reduce() method in JavaScript is an array method that reduces the elements of an array to a single value by applying a callback function to each element and maintaining an accumulator.
 
 
 
