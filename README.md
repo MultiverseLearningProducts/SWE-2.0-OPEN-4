@@ -4,7 +4,16 @@
 
 Materials for the SWE2.0(Open)4-US cohort
 
+## Week 2: JavaScript Intermediate Concepts
 
+|Day|Slides/Notes|Recordings|Challenges|Workspaces|
+|-----| ------------- |---------------------|----------|-------|
+|W2D1|[Loops](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/1-loops)|[Workshop & more]() Passcode:  |[Challenges - Loops]()|
+|W2D2|[Coercion, truthiness, scope](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/2-truthiness-and-scope)|[Workshop & more]() Passcode: |[Challenges - D2]()|
+|W2D3|[Arrays](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/3-Arrays)|[Workshop & more]() Passcode: |[Challenges - Arrays]()|
+|W2D4|[Objects](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/4-Objects)|[Workshop & more]() Passcode: |[Challenges - Objects]()|
+|W2D5|[Recursion]() Passcode: |[Challenges - Recursion]()|
+---
 
 ## Week 1: JavaScript Foundations
 
