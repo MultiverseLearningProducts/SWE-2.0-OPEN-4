@@ -15,5 +15,7 @@
     const name = 'abcd' // access by index
     name[2] // 'c'
     2. you might want to use .toUpperCase() or .toLowerCase()
+    3. .length is a handy boundary for your for loop
 */
+
 
