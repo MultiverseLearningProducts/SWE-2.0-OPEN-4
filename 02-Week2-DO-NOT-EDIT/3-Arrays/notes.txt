@@ -10,8 +10,6 @@ Lesson Objectives
 
     1. Can you explain what an array is and its purpose in JavaScript?
 
-    2. How is data stored and organized in an array in JavaScript?
-
 -------------------------------------------------------
 2. To be able to create, modify and manipulate arrays.
 
@@ -21,7 +19,7 @@ Lesson Objectives
 
         Common Property:
         .length
-        
+
         -------------- 
         push() - adds elements to the end of the array
         pop() - removes the last element of the array
