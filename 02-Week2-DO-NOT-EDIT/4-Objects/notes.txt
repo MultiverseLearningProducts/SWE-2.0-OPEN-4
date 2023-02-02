@@ -8,8 +8,31 @@ Learning Objectives
 
 ---------------------------------------------------
 1. How to create a simple JavaScript object using object literal syntax.
+
+        const obj = {
+            key: value,
+            key: value,
+            key: value
+        }
 ---------------------------------------------------
 2. How to access properties of an object using dot notation and bracket notation.
+    - nameOfObject.nameOfKey //dot notation
+    - nameOfObject['nameOfKey'] // bracket notation
+        -If using bracket notation, remember to wrap key around with quotations.
+    - To access nested values in an object, a technique you can use is to think about the current 'layer' that you're in and to think about how to access the next layer of the value that lives in the current key
+        Ex:
+         let obj: {
+             key1: [true, {
+                 someKey2: 'Hello world!'
+             }]
+         }
+            - Get to the outer most key:
+                obj.key1 // [true, { someKey2: 'Hello world!'}]
+            - think about the next layer:
+                    0             1
+                //[true, { someKey2: 'Hello world!'}]
+                obj.key1[1].someKey2 // 'Hello World!'
+
 ---------------------------------------------------
 3. How to add, modify and delete properties of a JavaScript object.
 ---------------------------------------------------
