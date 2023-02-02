@@ -35,6 +35,19 @@ Learning Objectives
 
 ---------------------------------------------------
 3. How to add, modify and delete properties of a JavaScript object.
+    - to add 
+        - nameOfObject.newKeyName = someData
+    - to modify
+        - nameOfObject.nameOfKey = newValue
+    - to delete
+        - delete nameOfObject.nameOfKey 
+
+    -looping through object
+        - for in loop
+        for(let key in object) {
+            //accessing values in object
+            object[key] //no quotations because the keys are dynamic.
+        }
 ---------------------------------------------------
 Extension:
 ** the 'this' keyword

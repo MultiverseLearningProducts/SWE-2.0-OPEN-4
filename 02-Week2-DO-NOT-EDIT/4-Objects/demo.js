@@ -89,7 +89,7 @@ const person = {
       city: 'San Francisco',
       state: [{
           name: 'California',
-          town: ['LA']
+          town: [`LA`]
       }, "hot"]
     }, //object
     greeting: function() {
