@@ -1,0 +1,18 @@
+Learning Objectives
+
+1. How to create a simple JavaScript object using object literal syntax.
+2. How to access properties of an object using dot notation and bracket notation.
+3. How to loop through an object
+4. How to add, modify and delete properties of a JavaScript object.
+
+
+---------------------------------------------------
+1. How to create a simple JavaScript object using object literal syntax.
+---------------------------------------------------
+2. How to access properties of an object using dot notation and bracket notation.
+---------------------------------------------------
+3. How to add, modify and delete properties of a JavaScript object.
+---------------------------------------------------
+Extension:
+** the 'this' keyword
+** adding Symbol keys to an object, accessing properties of objects with symbol keys
