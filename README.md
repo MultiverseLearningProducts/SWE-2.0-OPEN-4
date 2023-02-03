@@ -12,7 +12,7 @@ Materials for the SWE2.0(Open)4-US cohort
 |W2D2|[Coercion, truthiness, scope](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/2-truthiness-and-scope)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/xa0kHt5yhsRgoKcGQQsr6axeJs8Ma-Bu5HfRkjV0x7tShiFnrYOVKN6qA6At_C-q.dgKbZynujwYqPy3v) Passcode: 0vvZ%FX&|[Challenges - D2]()|
 |W2D3|[Arrays](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/3-Arrays)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/FHlx0-A0Rf7gzWjk3tMIhZTWcww20AVxQT3Du7yB-66LaWSYNrQ708M24O4gV7gl.GbyhcMGL6cenR27W) Passcode: yYUl&0q1 |[Challenges - Arrays]()|
 |W2D4|[Objects](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/4-Objects)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/2QggfxGQn8rJ821k3NiulwOdHjUHuStqb_LYAOwlDOKfpRRNNsOt1WI574NVVTI.wkf3Zh3vvn_TjSfI) Passcode: 1PW4^!e0|[Challenges - Objects]()|
-|W2D5|[Slides](https://docs.google.com/presentation/d/e/2PACX-1vTHvjQq3Rf4O0bWIoAIBMLlqvySSEpdOhwQsW-0JK4S7EPgh5uM6Uq8IX45EhW_QaAn-ZUZsnBTvNoc/pub?start=false&loop=false&delayms=3000)|[Recursion](https://multiverse-io.zoom.us/rec/share/Be5Hd2nHaRgLWKf1tOlPwH92i42nIHnmZS0ffcYvG3PrKGUAUa0MonQAV4UF6nB5.NeZCW9gZGQRJwrS7) Passcode: s1^&BSFd|[Challenges - Recursion]()|
+|W2D5|[Recusion](https://docs.google.com/presentation/d/e/2PACX-1vTHvjQq3Rf4O0bWIoAIBMLlqvySSEpdOhwQsW-0JK4S7EPgh5uM6Uq8IX45EhW_QaAn-ZUZsnBTvNoc/pub?start=false&loop=false&delayms=3000)|[Recursion](https://multiverse-io.zoom.us/rec/share/Be5Hd2nHaRgLWKf1tOlPwH92i42nIHnmZS0ffcYvG3PrKGUAUa0MonQAV4UF6nB5.NeZCW9gZGQRJwrS7) Passcode: s1^&BSFd|[Challenges - Recursion]()|
 ---
 
 ## Week 1: JavaScript Foundations
