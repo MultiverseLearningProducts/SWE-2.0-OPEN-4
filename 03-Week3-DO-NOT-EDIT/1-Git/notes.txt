@@ -6,7 +6,7 @@ Lesson Objectives
 4. Basic Git commands
 5. Two workflows:
     - A- working from an existing directory [x]
-    - B- Creating your own directory []
+    - B- Creating your own directory [x]
 
 ------------------------------------------------
 1. What is Git?

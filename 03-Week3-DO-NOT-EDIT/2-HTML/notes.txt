@@ -1,0 +1,40 @@
+Learning Objectives:
+
+* To understand the basics of HTML and its role in web development
+* To learn about HTML tags and attributes
+* To create a simple webpage using HTML tags
+
+----------------------------------------------------------------------
+* To understand the basics of HTML and its role in web development
+    1. What is HTML?
+    2. What is the structure and syntax of HTML?
+----------------------------------------------------------------------
+* To learn about HTML tags and attributes
+    1. Demonstration of html elements and attributes
+
+        A. Headings and Paragraphs
+            Explanation of heading tags (h1, h2, h3, etc.)
+            Explanation of paragraph tags (p)
+
+        B. Images
+            Explanation of the image tag (img)
+            Explanation of the src and alt attributes
+
+        C. Links
+            Explanation of the anchor tag (a)
+            Explanation of the href attribute
+
+        D. Lists 
+            Explanation of ordered and unordered lists
+            Explanation of list item tags (li)
+            
+        E. Div and Span 
+            Explanation of the div tag and its role in creating sections
+            Explanation of the span tag and its role in formatting inline text
+----------------------------------------------------------------------
+* To create a simple webpage using HTML tags
+
+    1. What are the header, navigation, main content, and footer?
+    
+    
+----------------------------------------------------------------------
