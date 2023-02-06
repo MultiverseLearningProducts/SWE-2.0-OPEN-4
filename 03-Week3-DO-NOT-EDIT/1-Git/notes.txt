@@ -1,0 +1,9 @@
+Lesson Objectives
+
+1. What is Git?
+2. Git vs. Github
+3. Clone vs. Fork a repo
+4. Basic Git commands
+5. Two workflows:
+    - A- working from an existing directory
+    - B- Creating your own directory
