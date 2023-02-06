@@ -7,3 +7,20 @@ Lesson Objectives
 5. Two workflows:
     - A- working from an existing directory
     - B- Creating your own directory
+
+------------------------------------------------
+1. What is Git?
+    - It's the world's most popular version control.
+    - You can keep track of every 'version' of your application using it's history.
+        - Some applications of this is if your application breaks and you can't fix the issue, you can 'restore' a previous version of your application as long as you have the 'address' of it (node)
+    - You can collaborate on projects with others by creating 'branches'
+        - When you're collaborators are done with their portion, they can combine their changes to the current version of the project by 'merging' their changes
+
+------------------------------------------------
+2. Git vs. Github
+    -Git - version control system that allows you to manager and keep track of changes in your codebase.
+
+    -Git-hub - a web-based platform that provides hosting for your git repositories.
+------------------------------------------------
+3. Clone vs. Fork a repo
+------------------------------------------------
