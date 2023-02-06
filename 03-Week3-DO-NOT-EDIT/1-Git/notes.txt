@@ -5,8 +5,8 @@ Lesson Objectives
 3. Clone vs. Fork a repo
 4. Basic Git commands
 5. Two workflows:
-    - A- working from an existing directory
-    - B- Creating your own directory
+    - A- working from an existing directory [x]
+    - B- Creating your own directory []
 
 ------------------------------------------------
 1. What is Git?
@@ -44,3 +44,19 @@ GIT COMMAND:
 - git add . -> adds all the modifications to be staged
 - git commit -m "add a message" -> commiting your changes, and also adding a message to your commit to reference
 - git push -> pushing your changes to update the repo on github
+
+------------------------------------------------
+
+B - Creating a new Repository 
+
+1. Create a new folder 
+    - Add content
+2. In terminal 
+    - git remote -v    - this checks to see if the repository is currently tracked by git
+    - git init - initializes a new git repository
+    - git add . 
+    - git commit -m "first commit"
+        - create a new repo on github
+        - follow the second box!
+    - git remote add origin "pasteTheURLhere"
+    - git push -u origin main
