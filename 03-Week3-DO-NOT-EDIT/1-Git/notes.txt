@@ -23,4 +23,24 @@ Lesson Objectives
     -Git-hub - a web-based platform that provides hosting for your git repositories.
 ------------------------------------------------
 3. Clone vs. Fork a repo
+    - Forking a repo - Creating a copy of the repository that is completely independent to the original authored repository. It is unlinked to the original repository
+
+    - Cloning a repo - creating a copy of the repository that is linked to the original repository
 ------------------------------------------------
+
+A- working from an existing directory
+
+- copy the github link 
+- terminal - navigate to the folder where you want to clone your project into
+    - pwd - to check your current working directory
+    - cd nameOfFolder - change directory
+
+GIT COMMAND:
+- git clone url - this will download a copy of the repository to your local machine
+
+- navigate to your project on vs code -> make your changes 
+
+- git status -> to see what files you have modified 
+- git add . -> adds all the modifications to be staged
+- git commit -m "add a message" -> commiting your changes, and also adding a message to your commit to reference
+- git push -> pushing your changes to update the repo on github
