@@ -1,0 +1,47 @@
+Warmup: 
+
+1. Fork and Clone https://github.com/klaw772/wk-3-day-3-demo
+
+2. Download Live Server VSCode extension
+
+3. Make a couple of divs in the body of the page, where each div contains a heading, one with 'Best Prices' and one with 'Best Appetizers'. Then, give one div an unordered list of prices, and the other div an ordered list of best appetizers. 
+---------------------------------------------------------------
+Learning Objectives:
+
+* Adding CSS to your HTML page []
+* Writing CSS []
+* Selecting HTML elements with CSS []
+* Working with common CSS properties and their values to style HTML page []
+* Use the box model to layout the content on your web-page []
+
+---------------------------------------------------------------
+* Adding CSS to your HTML page
+  1. Where should we link our CSS file to our HTML page?
+  2. What attributes did we learn about yesterday that we can use to style our HTML elements?
+
+---------------------------------------------------------------
+* Writing CSS
+  1. How do we structure each piece of CSS that we want to write?
+
+---------------------------------------------------------------
+* Selecting HTML elements with CSS
+  1. What is a class?
+  2. What is an id?
+  3. What is the difference between a class and an id?
+---------------------------------------------------------------
+* Working with common CSS properties and their values to style HTML pages
+  1. background-color
+  2. background-image
+  3. color
+  4. background-size
+  5. font-family
+  6. text-align
+  7. text-decoration
+  8. border
+  9. text-shadow
+  10. box-shadow
+---------------------------------------------------------------
+* Use length units and the box model to layout the content on your web-page
+  1. What are different examples of length units?
+  2. What is the difference between an absolute and relative length unit?
+  3. What does the box model look like, and how can we define each part of the box model in our CSS?
