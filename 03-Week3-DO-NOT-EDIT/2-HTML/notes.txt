@@ -7,34 +7,69 @@ Learning Objectives:
 ----------------------------------------------------------------------
 * To understand the basics of HTML and its role in web development
     1. What is HTML?
+        - Hypertext Markup Language
+        - HTML - structure/bones
+        - CSS - Cascading Style sheets - interior design
+        - JS - Javascript - Brings your site to life
+
     2. What is the structure and syntax of HTML?
+        - tags <opening>content</closing>
+        <opening>
+            content
+        </opening>
+
+        - certain tags are self-closing
+            <img src="" alt="" />
+
+        - attribute
+            - css or javascript-> add class or id   
+            ex: <p class="" id="" >content</p>
+            - attributes are used for helping us identify HTML tags for styling in our css file and also to help us identify tags when we are trying to use it in our javascript file.
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+         
+
 ----------------------------------------------------------------------
 * To learn about HTML tags and attributes
     1. Demonstration of html elements and attributes
 
         A. Headings and Paragraphs
             Explanation of heading tags (h1, h2, h3, etc.)
+                - Heading tags (h1-h6) are used to define the structure and content hiearchy of a webpage. 
+                - h1 is the most important heading tag while h2-h6 are used for sub headings
             Explanation of paragraph tags (p)
+                - defines a paragraph of text on a webpage
 
         B. Images
             Explanation of the image tag (img)
             Explanation of the src and alt attributes
+            - src - the path of where you get your image
+            - alt - to help screen readers read the description that you put for the image.
 
         C. Links
             Explanation of the anchor tag (a)
             Explanation of the href attribute
+            - the href attribute specifies the destination of the link
 
         D. Lists 
             Explanation of ordered and unordered lists
+            - Ordered <ol></ol>
+            - Unordered <ul></ul>
             Explanation of list item tags (li)
-            
+                - list items are the content in your list.
+
         E. Div and Span 
             Explanation of the div tag and its role in creating sections
+                -  The <div></div> tag is used to create a section on a webpage which can be styled and positioned using CSS.
             Explanation of the span tag and its role in formatting inline text
+                - The span tag is used to format inline text within a paragraph using CSS
+                ex: <p> This is a green <span class="word"> word </span> </p>
 ----------------------------------------------------------------------
 * To create a simple webpage using HTML tags
 
     1. What are the header, navigation, main content, and footer?
-    
+
     
 ----------------------------------------------------------------------
