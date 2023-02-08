@@ -10,26 +10,42 @@ Warmup:
 ---------------------------------------------------------------
 Learning Objectives:
 
-* Adding CSS to your HTML page []
-* Writing CSS []
-* Selecting HTML elements with CSS []
-* Working with common CSS properties and their values to style HTML page []
-* Use the box model to layout the content on your web-page []
+* Adding CSS to your HTML page [x]
+* Writing CSS [x]
+* Selecting HTML elements with CSS [x]
+* Working with common CSS properties and their values to style HTML page [x]
+* Use the box model to layout the content on your web-page [x]
 
 ---------------------------------------------------------------
 * Adding CSS to your HTML page
   1. Where should we link our CSS file to our HTML page?
+    - in the <head>, add <link rel="stylesheet" href="{path-to-css-file}"
   2. What attributes did we learn about yesterday that we can use to style our HTML elements?
-
+    - classes and ids!
 ---------------------------------------------------------------
 * Writing CSS
   1. How do we structure each piece of CSS that we want to write?
-  2. How can we use browser developer tools to view the CSS that is being used for on our HTML webpage?
+    #[example-id] {
+      [example-attribute]: [example-attribute-value];
+    }
 
+    or
+    
+    .[example-class] {
+      [example-attribute]: [example-attribute-value];
+    }
+
+    note: don't forget a semicolon at the end of each attribute/value pair! css will get mad >:c
+
+  2. How can we use browser developer tools to view the CSS that is being used for on our HTML webpage?
+    - right-click your webpage in the browser, click 'Inspect', and check out the Elements tab and the Styles tab. these will show you each of the HTML elements in your page, as well as the styling in each!
 ---------------------------------------------------------------
 * Selecting HTML elements with CSS
   1. What is the difference between a class and an id?
+    - a class lets you style a group of elements, an id lets you style one unique element 
   2. How can we select an element (or elements) by its class or id?
+    - #id 
+    - .class
 ---------------------------------------------------------------
 * Working with common CSS properties and their values to style HTML pages
   1. background-color
@@ -45,5 +61,13 @@ Learning Objectives:
 ---------------------------------------------------------------
 * Use length units and the box model to layout the content on your web-page
   1. What are different examples of length units?
+    - px, em, rem, %
+    - in/cm/mm is also compatible 
   2. What is the difference between an absolute and relative length unit?
+    - absolute length unit gives us a defined length (e.g. 4 px, 1 in)
+    - relative length unit gives us a length ~ relative ~ to a parent element (e.g. 30% of parent div width, 1.4rem of a 16px global font) - not a defined unit of measurement
   3. What does the box model look like, and how can we define each part of the box model in our CSS?
+    - content -> padding -> border -> margin
+    - content is the box IMMEDIATELY around your content
+    - padding is the spacing between your content and the border
+    - margin is the spacing between the border of the element you're styling and the border of a neighboring element

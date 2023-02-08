@@ -1,0 +1,23 @@
+#app-section-1 {
+  border: 1px solid black;
+  background-color: rgb(90, 118, 90);
+  padding: 15px 15px 15px 15px;
+  margin: 15px 15px 15px 15px;
+}
+
+#app-section-2 {
+  background-image: url('https://t3.ftcdn.net/jpg/03/75/89/32/360_F_375893262_zxeSLy0Vduyael1kMvEdgwtAtVm742Zu.jpg');
+  box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+.app-list {
+  color: black;
+  font-size: 1.4rem;
+  font-family:'Courier New', Courier, monospace;
+  text-align: left;
+  text-decoration: line-through;
+}
+
+#appetizer-heading {
+  text-shadow: 2px 2px rebeccapurple;
+}
