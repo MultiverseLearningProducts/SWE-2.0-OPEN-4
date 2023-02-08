@@ -1,6 +1,6 @@
 Warmup: 
 
-1. Fork and Clone https://github.com/klaw772/wk-3-day-3-demo
+1. Fork https://github.com/klaw772/wk-3-day-3-demo, then Clone Your Fork
 
 2. Download Live Server VSCode extension
 
