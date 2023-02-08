@@ -4,7 +4,9 @@ Warmup:
 
 2. Download Live Server VSCode extension
 
-3. Make a couple of divs in the body of the page, where each div contains a heading, one with 'Best Prices' and one with 'Best Appetizers'. Then, give one div an unordered list of prices, and the other div an ordered list of best appetizers. 
+3. Make a couple of divs in the body of the page, where each div contains a heading, one with 'Best Prices' and one with 'Best Appetizers'. Then, give one div an unordered list of prices, and the other div an ordered list of best appetizers.
+
+
 ---------------------------------------------------------------
 Learning Objectives:
 
@@ -22,13 +24,12 @@ Learning Objectives:
 ---------------------------------------------------------------
 * Writing CSS
   1. How do we structure each piece of CSS that we want to write?
+  2. How can we use browser developer tools to view the CSS that is being used for on our HTML webpage?
 
 ---------------------------------------------------------------
 * Selecting HTML elements with CSS
-  1. What is a class?
-  2. What is an id?
-  3. What is the difference between a class and an id?
-  4. How can we select an element (or elements) by its class or id?
+  1. What is the difference between a class and an id?
+  2. How can we select an element (or elements) by its class or id?
 ---------------------------------------------------------------
 * Working with common CSS properties and their values to style HTML pages
   1. background-color
