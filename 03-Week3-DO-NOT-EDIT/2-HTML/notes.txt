@@ -70,6 +70,6 @@ Learning Objectives:
 * To create a simple webpage using HTML tags
 
     1. What are the header, navigation, main content, and footer?
-
+    
     
 ----------------------------------------------------------------------
