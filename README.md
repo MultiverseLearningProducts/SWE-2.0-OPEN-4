@@ -9,9 +9,9 @@ Materials for the SWE2.0(Open)4-US cohort
 |Day|Slides/Notes|Recordings|Challenges|Workspaces|
 |-----| ------------- |---------------------|----------|-------|
 |W3D1|[Git & Github](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/03-Week3-DO-NOT-EDIT/1-Git)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/MV7xVdAa-MAR0iKlmOc9Q1jh6WeGa2QapmbN0FA8r8lv2QkPjAc35sTqdDHgtNCO.zHmHSUPUy7g5zpqn) Passcode: Os0Q4*@#  |[Challenges - Git](https://learngitbranching.js.org/?locale=en_US)|
-|W3D2|[HTML](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/2-truthiness-and-scope)|[Workshop & more]() Passcode: |[Challenges - HTML]()|
-|W3D3|[CSS](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/3-Arrays)|[Workshop & more]() Passcode: |[Challenges - CSS]()|
-|W3D4|[Selectors & Flexbox](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/4-Objects)|[Workshop & more]() Passcode: |[Challenges - Flexbox]()|
+|W3D2|[HTML](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/2-truthiness-and-scope)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/8UYY9QyBFqvS5xe8fg8YXaB9oH5kld8APzv8fo0mrc8EM048dtiFM84-J2_EWH8g.bDtCx-UTVWbGe2Ll) Passcode: tH9NXp@G|[Challenges - HTML]()|
+|W3D3|[CSS](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/3-Arrays)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/L9pOLG1Bvlzq6PqNM2bUs8-dgn5Ik8aZvlTB_bLFm_GED8GGUhFrSgKOwFgutnDG.gWFWkTDLm_Sp7_f5) Passcode: p055AJ5@|[Challenges - CSS]()|
+|W3D4|[Selectors & Flexbox](/Users/lindaeng/Desktop/SWE-2.0-OPEN-4/02-Week2-DO-NOT-EDIT/4-Objects)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/K9IMj4q1BfMeJV2khZIE6IJ1Bay0cuCWPMRQXWiLUN2NaSrEbmLwO_00mgAzoPmG.K5Gpprl7QovJtx_X) Passcode: *%zdHa2&|[Challenges - Flexbox]()|
 |W3D5|[Media Queries]()|[Workshop & more]() Passcode: |[Challenges - Media Queries]()|
 ---
 
