@@ -1,0 +1,68 @@
+Lesson Objectives
+
+1. Learn how to combine Selectors
+2. Flexbox
+
+** Warm up [15 mins] **
+1. Create a new git repository called selectors-flexbox and host it on github.
+2. Add index.html and styles.css in the repo.
+3. Add the html boilerplate to the index.html file
+4. Link your css to the index.html file. <link rel="stylesheet" href="styles.css">
+5. Create a div. Inside the div create two paragraphs and an unordered list with one item in the list.
+
+
+        <p class="words"></p>
+        <p class="words"></p>
+        <p class="words"></p>
+        <p id="this-word" class="words"></p>
+
+        .words {
+            color: red;
+        }
+
+        #this-word {
+            color:blue;
+        }
+
+
+
+------------------------------------------------
+1. Learn how to combine Selectors
+    1. Descendant Selector
+
+        parent descendants {
+            //properties
+        }
+
+        - The descendant selector will apply the css property to the children that live inside of the container
+
+    2. Child Selector
+       - Targets elements that are immediate children of a sepcified element. For example:
+
+       #parent > .child {
+           //properties
+       }
+
+       - Will only target direct children of the parent component/element. Will not target grandchildren(nested elements)
+
+    3. Adjacent Sibling Selector
+        - Targets elements that are immediately next to a specified element.
+
+        firstElement + targetElement {
+            //property
+        }
+
+    4. General Sibiling Selector
+        - Will target all elements that come after it
+        element + element2 {
+            //property
+        }
+    5. Multiple Selectors
+        - You can group multiple html elements together and apply a CSS property to them:
+
+        element1, element2, element3 {
+            //property
+        }
+------------------------------------------------
+3. Flexbox
+------------------------------------------------
