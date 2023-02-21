@@ -1,0 +1,21 @@
+Lesson Objectives
+
+- What is Node? []
+- How to create a Node project? []
+- How to install dependencies and use them? []
+- How to export files and use them in different files? []
+
+
+------------------------------------------------------------
+- What is Node?
+
+------------------------------------------------------------
+- How to create a Node project?
+
+------------------------------------------------------------
+- How to install dependencies and use them?
+
+------------------------------------------------------------
+- How to export files and use them in different files?
+
+------------------------------------------------------------
