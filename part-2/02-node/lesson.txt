@@ -1,21 +1,57 @@
 Lesson Objectives
 
-- What is Node? []
-- How to create a Node project? []
+- What is Node? [x]
+- How to create a Node project? [x]
 - How to install dependencies and use them? []
 - How to export files and use them in different files? []
 
 
 ------------------------------------------------------------
 - What is Node?
+    - Node is software used for building applications and web services. 
+    - Node allows developers to use JS to create software that can run on servers and interact with webpages.
+    - An analogy could be to think of Node as a fishtank
+        - water as the enviorment
+        - the materials that allow the fishtank to thrive as the 'dependencies'
 
 ------------------------------------------------------------
 - How to create a Node project?
+    1. check to see if you have node installed: node --version
+    2. Navigate to the desired location of where you want your project to exist.
+    3. Create a new directory -> cd into the directory
+    4. npm init -> will prompt you with the package.json configuration requests
 
 ------------------------------------------------------------
 - How to install dependencies and use them?
 
+    1. The package.json file is a file that lists various information about the project and its dependencies.
+    2. To install dependencies npm install nameOfDependency
+        - 1. Make sure you are in the correct directory
+        - 2. npm install nameOfDependency
+        - 3. If you encounter this bug:
+            SyntaxError: Cannot use import statement outside a module
+            1. Go into package.json -> add "type": "module"
+
 ------------------------------------------------------------
 - How to export files and use them in different files?
 
+    1. In the file that you want to export,
+        a. If only one item, use: 
+            export default nameOfFunction
+        b. If more than one item use:
+            export {
+                function1,
+                function2,
+                ...
+            }
+    
+        In the file that you want to import and use the functions:
+            import { function1, item1, etc } from '/pathToFile.extension'
+
 ------------------------------------------------------------
+1. create a node project
+2. download the color depenency
+3. create a file with a few functions
+    - learn how to use this new depency that you downloaded
+4. create another file and practice exporting, importing files.
+    - practice using functions that live in different locations.
