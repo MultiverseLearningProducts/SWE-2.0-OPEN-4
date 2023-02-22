@@ -2,8 +2,8 @@ Lesson Objectives
 
 - What is Node? [x]
 - How to create a Node project? [x]
-- How to install dependencies and use them? []
-- How to export files and use them in different files? []
+- How to install dependencies and use them? [x]
+- How to export files and use them in different files? [x]
 
 
 ------------------------------------------------------------
@@ -50,7 +50,7 @@ Lesson Objectives
 
 ------------------------------------------------------------
 1. create a node project
-2. download the color depenency
+2. download the colors depenency
 3. create a file with a few functions
     - learn how to use this new depency that you downloaded
 4. create another file and practice exporting, importing files.

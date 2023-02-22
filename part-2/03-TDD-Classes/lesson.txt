@@ -1,0 +1,17 @@
+Lesson Objectives:
+
+- How to install a testing framework
+- How to write a test 
+- How to write a script to run multiple tests
+- What are classes?
+- How to create an instance of a class
+- Writing tests for classes
+
+
+------------------------------------------------
+- How to install a testing framework
+- How to write a test 
+- How to write a script to run multiple tests
+- What are classes?
+- How to create an instance of a class
+- Writing tests for classes
