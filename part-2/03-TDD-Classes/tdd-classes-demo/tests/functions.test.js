@@ -4,7 +4,7 @@
 
 
 // imports 
-const { sumOfTwo, strReverse } = require('../functions')
+const { sumOfTwo, strReverse, checkEmail } = require('../functions')
 
 //describe function - is used to group related tests together in a single logical unit. It takes two arguments, the first argument is a string that describes the tests, the second argument is a callback function that will contain the tests itself
 
@@ -25,6 +25,16 @@ describe('tests to determine if our functions are giving us our expected results
 
         expect(reversedStr).toBe('dcba')
         expect(reversedStr2).toBe('')
+    })
+
+    test('our function should determine if an email is in the correct format @gmail.com', () => {
+        const email1 = checkEmail('hello@gmail.com')
+        const email2 = checkEmail('emailgmail.com')
+        const email3 = checkEmail('')
+
+        expect(email1).toBe(true)
+        expect(email2).toBe(false)
+        expect(email3).toBe(false)
     })
 })
 
