@@ -1,0 +1,43 @@
+    Name - property / state -> String 
+
+    Run - method / behavior -> (Custom)
+
+    Write - This is something you do. Therefore it's likely to be a method. 
+
+    Color - Property / State -> String 
+
+    isWorking - Property / State -> Boolean -> "State of Action"
+
+    likesFood -> Property / State / State of Action ? -> Boolean
+
+    isHungry -> State of Action -> Boolean
+
+    Jumps -> Custom/Behavior
+
+
+
+
+
+
+    Some Examples of Inheritence: 
+        What is this? 
+            -> a IS A b
+            -> If it has an "IS A" relationship, it's inheritable
+
+        For example: 
+            -> Dog IS A Animal
+            -> Cat IS A Animal
+            -> Toyota IS A Car
+            -> Car IS A Vehicle
+
+            Class Responses: 
+            -> Orange IS A Fruit
+            -> Water IS A Liquid
+            -> Juice IS A Liquid
+            -> CellPhone IS A Computer
+            -> iPhone IS A MobileDevice
+            -> MobileDevice IS A Computer
+            -> New York IS A State
+            -> Android IS A OperatingSystem
+            -> SamsungS9000 IS A MobileDevice 
+            

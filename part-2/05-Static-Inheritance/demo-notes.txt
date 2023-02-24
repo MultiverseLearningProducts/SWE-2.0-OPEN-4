@@ -1,0 +1,20 @@
+Class Time: What do you currently know about OOP?
+    - Classes
+        - Blueprints for an object you to reuse?
+    - DRY Code
+        (D)on't (R)epeat (Y)ourself
+
+    - Object
+        - Properties (State)
+        - Methods (Behavior)
+
+
+    Higher Level: 
+        - 
+
+
+Static Function and Properties:
+    - These are values that are attached DIRECTLY to the class itself, NOT the instance of the class. 
+
+- What the difference is between an instance of a class and the class itself?
+    -> Instance of a class is whenever you used the keyword "new" on it. 
