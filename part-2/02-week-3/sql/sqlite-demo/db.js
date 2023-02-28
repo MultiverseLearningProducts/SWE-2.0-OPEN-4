@@ -76,21 +76,70 @@ sql= `INSERT INTO songs(name, artist, genre) VALUES(?,?,?)`
 // })
 
 //db.all() - returns multiple rows in our tables
-sql = `SELECT * FROM songs WHERE genre = 'Pop'`
+// sql = `SELECT * FROM songs WHERE genre = 'Pop'`
 
-db.all(sql, [], (err,rows) => {
+// db.all(sql, [], (err,rows) => {
+//     if(err) {
+//         console.error(err)
+//     } else {
+//         rows.forEach(row => {
+//             console.log(row)
+//         })
+//     }
+// })
+
+
+//Update table name, 
+// sql= `ALTER TABLE songs RENAME TO singles`
+// db.run(sql, [], (err) => {
+//     if(err) {
+//         console.error(err)
+//     } else {
+//         console.log(`table name sucessfully changed!`)
+//     }
+// })
+
+
+//update column name, 
+// sql= `ALTER TABLE singles RENAME COLUMN artist TO song_writer`
+// db.run(sql, [], (err) => {
+//     if(err) {
+//         console.error(err)
+//     } else {
+//         console.log(`column name sucessfully changed!`)
+//     }
+// })
+
+//update row information
+// sql= `UPDATE singles SET song_writer=? WHERE id=?`
+// db.run(sql,['Drake', 2], (err) => {
+//     if(err) {
+//         console.error(err)
+//     } else {
+//         console.log(`Row information has changed!`)
+//     }
+// })
+
+//How to delete a table, 
+// sql=`DROP TABLE songs`
+// db.run(sql)
+
+//delete a row
+// sql=`DELETE FROM singles WHERE id=4`
+// db.run(sql, [], (err) => {
+//     if(err) {
+//         console.error(err)
+//     } else {
+//         console.log(`Row deleted sucessfully!`)
+//     } 
+// })
+
+//delete a column
+sql=`ALTER TABLE singles DROP COLUMN genre`
+db.run(sql, [], (err) => {
     if(err) {
         console.error(err)
     } else {
-        rows.forEach(row => {
-            console.log(row)
-        })
-    }
+        console.log(`Column deleted sucessfully!`)
+    } 
 })
-
-
-//Update table name, update column name, update row information
-
-
-
-//How to delete a table, delete a column, delete a row

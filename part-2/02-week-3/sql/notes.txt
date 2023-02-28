@@ -61,15 +61,19 @@ Structured Query Language
     - npm install sqlite3
     - create a file that will establish a connection to our database + where we will write our queries
     - create your database file: nameofdatabase.db
+    - import the sqlite3 dependency into the database file
 
 
 ---------------------------------------------------------------------
 3. How do we:
     1. Create a database file?
-    2. Create a table?
-    3. Insert rows into our table?
-    4. Query a table? A row?
+    2. Create a table? [x]
+    3. Insert rows into our table? [x]
+    4. Query a table? A row? [x]
     5. How do we update our table name? column name? information in a row?
     6. How do we delete a table? A row? A column?
 
 
+1. Practice the raw SQL queries on SQLzoo
+2. Create a node project -> install sqlite3 -> connect your database -> download DBbrowser
+    - practice writing queries to create tables -> rows -> interactions with your tables.
