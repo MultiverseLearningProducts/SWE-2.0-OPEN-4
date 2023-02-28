@@ -1,0 +1,33 @@
+Lesson Objectives:
+
+- Learn about relational databases 
+- how to set up a project with SQlite3
+- how to use SQL to:
+    1. Create a SQLite database
+    2. Create tables and entries
+    3. Query entries
+    4. Update a table and entry
+    5. Delete a table and entry
+
+---------------------------------------------------------------------
+1. What is a relational database?
+
+
+2. What is SQL?
+
+
+---------------------------------------------------------------------
+2. How to set up a project using SQLite3?
+
+
+
+---------------------------------------------------------------------
+3. How do we:
+    1. Create a database file?
+    2. Create a table?
+    3. Insert rows into our table?
+    4. Query a table? A row?
+    5. How do we update our table name? column name? information in a row?
+    6. How do we delete a table? A row? A column?
+
+
