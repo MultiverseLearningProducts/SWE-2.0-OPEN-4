@@ -2,7 +2,7 @@ Lesson Objectives
 
 - Learn what an ORM is
 - How to create a sequelize instance
-- How to create a model
+- How to create a model 
 - Learn how to seed data into our database
 
 
@@ -10,7 +10,7 @@ DEMO:
 
 Part 1: Setting up our folder directory
 
-- db
+- db/
     - models/
         - User.js
     - seeders/
