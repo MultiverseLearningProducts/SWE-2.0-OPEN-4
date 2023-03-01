@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node db/seeders/seed-users.js"
+    "seed": "node db/seeders/seed-database.js"
   },
   "author": "",
   "license": "ISC",

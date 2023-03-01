@@ -32,6 +32,7 @@ Part 2:
     4. Create a seed function to put our data into our tables. seeders/seed-users.js [x]
 
     ** create a script to seed our database using an npm run script **
+    - navigate to package.json and define a "seed" script
 
 Pair Exercise:
 
