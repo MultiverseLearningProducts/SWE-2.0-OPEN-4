@@ -1,9 +1,15 @@
 Lesson Objectives
 
-- Learn what an ORM is
-- How to create a sequelize instance
+- Learn what an ORM is [x]
+- How to create a sequelize instance 
 - How to create a model 
 - Learn how to seed data into our database
+
+ORM - Object Relational Mapper - maps object-oriented code to relational database structures.
+Sequelize - Allows you to work with SQL databases in an object-oriented way by providing abstractions that represent tables and their relationships as Javascript classes and Objects.
+    - It will translate our javascript code into SQL queries under the hood to make it a lot easier for us to interact with the database.
+
+
 
 
 DEMO:
@@ -16,14 +22,14 @@ Part 1: Setting up our folder directory
     - seeders/
         - seed-data.json
         - seed-users.js
-    - index.js
+    - index.js 
 
 Part 2: 
 
-    1. Creating our sequelize instance. -> index.js []
-    2. Create our sequelize models. -> models/model.js []
-    3. Understand our seed file -> seeders/seed-data.json []
-    4. Create a seed function to put our data into our tables. seeders/seed-users.js []
+    1. Creating our sequelize instance. -> index.js [x]
+    2. Create our sequelize models. -> models/User.js [x]
+    3. Understand our seed file -> seeders/seed-data.json [x] - example data
+    4. Create a seed function to put our data into our tables. seeders/seed-users.js [x]
 
     ** create a script to seed our database using an npm run script **
 

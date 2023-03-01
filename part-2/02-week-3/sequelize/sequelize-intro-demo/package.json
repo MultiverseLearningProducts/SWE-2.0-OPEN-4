@@ -1,0 +1,16 @@
+{
+  "name": "sequelize-intro-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node db/seeders/seed-users.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.29.0",
+    "sqlite3": "^5.1.4"
+  }
+}
