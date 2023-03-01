@@ -2,8 +2,9 @@
 //1. sequelize instance
 const sequelize = require('../index') //importing our db connection
 //2. User model
-const User = require('../models/User') // importing our model
-const Pet = require('../models/Pet')
+// const User = require('../models/User') // importing our model
+// const Pet = require('../models/Pet')
+const { User, Pet } = require('../models/index')
 //3. seed data 
 const users = require('./seed-users.json') //importing our seed data
 const pets = require('./seed-pets.json')
