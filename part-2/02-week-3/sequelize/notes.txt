@@ -1,0 +1,35 @@
+Lesson Objectives
+
+- Learn what an ORM is
+- How to create a sequelize instance
+- How to create a model
+- Learn how to seed data into our database
+
+
+DEMO:
+
+Part 1: Setting up our folder directory
+
+- db
+    - models/
+        - User.js
+    - seeders/
+        - seed-data.json
+        - seed-users.js
+    - index.js
+
+Part 2: 
+
+    1. Creating our sequelize instance. -> index.js []
+    2. Create our sequelize models. -> models/model.js []
+    3. Understand our seed file -> seeders/seed-data.json []
+    4. Create a seed function to put our data into our tables. seeders/seed-users.js []
+
+    ** create a script to seed our database using an npm run script **
+
+Pair Exercise:
+
+    1. Create another model Pets and define the fields
+    2. Create a seed file called seed-data-pets.js
+    3. Seed it into the database
+    4. Check db browser if the table was created.
