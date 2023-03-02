@@ -1,8 +1,20 @@
+Lesson Objective:
+
+By the end of this lesson, you will be able to create and use Sequelize associations to link different database tables together in a Node.js application.
+
+
+
+
+
+
+--------------------------------------------------------------------
+
+
 Here are some examples for the different sequelize associations:
 
-One-to-One (1:1) association:
+One-to-One (1:1) association: 
 
-A person has one passport and a passport belongs to one person.
+- A person has one passport and a passport belongs to one person.
 
 Person
 +----+-------+---------------------+---------------------+
@@ -27,8 +39,7 @@ Passport
 
 One-to-Many (1:N) association:
 
-A customer can have many orders, but an order can only belong to one customer.
-A blog post has many comments, but a comment can only belong to one blog post.
+- A customer can have many orders, but an order can only belong to one customer.
 
 +-----------+---------------+
 |  Customer |               |
@@ -54,8 +65,7 @@ A blog post has many comments, but a comment can only belong to one blog post.
 
 Many-to-Many (N:M) association:
 
-A student can take many courses, and a course can have many students.
-A user can have many roles, and a role can have many users.
+- A student can take many courses, and a course can have many students.
 
 +---------+---------------+
 | Student |               |
