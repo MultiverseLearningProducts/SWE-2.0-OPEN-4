@@ -49,6 +49,8 @@ Student.belongsToMany(Course, { through: Enrollment });
 Course.belongsToMany(Student, { through: Enrollment });
 
 
+/* ------------------------------------------------------------------------------ */
+
 // Sync the models to the database
 sequelize.sync({ force: true })
   .then(() => {
