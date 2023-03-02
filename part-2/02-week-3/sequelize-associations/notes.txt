@@ -2,17 +2,20 @@ Lesson Objective:
 
 By the end of this lesson, you will be able to create and use Sequelize associations to link different database tables together in a Node.js application.
 
-
-
-
-
+What are sequelize associations?
+    - Sequelize associations are a way to define relationships between tables in a relational db.
+    - Associations enable us t o create more complex database queries with fewer queries.
+    - Since the tables will have relationships with each other from the associations, we can write fewer queries that can target multiple tables.
+        - Helps us organize our data
+        - Helps facilitate writing cleaner code due to writing less queries. -> efficient queries.
 
 --------------------------------------------------------------------
-
-
 Here are some examples for the different sequelize associations:
 
 One-to-One (1:1) association: 
+
+Model1.hasOne(Model2)
+Model2.belongsTo(Model1)
 
 - A person has one passport and a passport belongs to one person.
 
@@ -38,6 +41,9 @@ Passport
 -----------------------------------------------------------------------------------------------------------------------------
 
 One-to-Many (1:N) association:
+
+Model1.hasMany(Model2)
+Model2.belongsTo(Model1)
 
 - A customer can have many orders, but an order can only belong to one customer.
 
@@ -87,6 +93,7 @@ Many-to-Many (N:M) association:
 | 3      | English         |
 +--------+-----------------+
 
+//Through table: Enrollment
 +------------+------------+---------+
 | Enrollment |            |         |
 +------------+------------+---------+
@@ -98,3 +105,18 @@ Many-to-Many (N:M) association:
 | 4          | 3          | 2        |
 | 5          | 3          | 3        |
 +------------+------------+---------+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Pair Programming exercise
+
+1. Pull down the repo and sync the database, observe the tables that are created -> walk through demo.js with the tables that are generated.
+    - focus on the foriegn keys column that gets created after every association.
+
+
+2.
+- Create an association between the User and Pets table from yesterday's demo
+- Reseed your data into the associated tables
+- check either DB browser or your sqlite viewer to see your newly associated tables

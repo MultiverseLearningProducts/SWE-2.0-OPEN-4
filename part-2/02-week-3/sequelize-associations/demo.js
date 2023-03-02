@@ -16,7 +16,7 @@ const Passport = sequelize.define('Passport', {
 });
   
 Person.hasOne(Passport);
-Passport.belongsTo(Person);
+Passport.belongsTo(Person); //foreign key -> Person primary key
   
 /* ------------------------------------------------------------------------------ */
 
@@ -30,7 +30,7 @@ const Order = sequelize.define('Order', {
 });
   
 Customer.hasMany(Order);
-Order.belongsTo(Customer);
+Order.belongsTo(Customer); //foreign key 
 
 /* ------------------------------------------------------------------------------ */
 
@@ -43,7 +43,7 @@ const Course = sequelize.define('Course', {
     name: DataTypes.STRING,
 });
   
-const Enrollment = sequelize.define('Enrollment', {});
+const Enrollment = sequelize.define('Enrollment', {}); //through table
   
 Student.belongsToMany(Course, { through: Enrollment });
 Course.belongsToMany(Student, { through: Enrollment });
