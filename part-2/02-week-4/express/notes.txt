@@ -1,0 +1,31 @@
+Express server - Learning objectives
+
+- How to create an express server
+- How to write an endpoint
+
+-----------------------------------
+Set up exercise [15 minutes]
+
+1. Create the following file structure:
+
+server/
+    config/
+        db.js
+    models/
+        Band.js
+        Musician.js
+        index.js
+    seeders/
+        seedData.js
+        seed.js
+    
+    app.js (create this file)
+
+2. Seed your database (you might have to update the path in the package.json file)
+
+-----------------------------------
+Web Server Recap:
+
+
+-----------------------------------
+DEMO:
