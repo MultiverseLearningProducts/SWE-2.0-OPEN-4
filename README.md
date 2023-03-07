@@ -4,6 +4,35 @@
 
 Materials for the SWE2.0(Open)4-US cohort
 
+## Week 7: Web Servers and Express
+
+|Day|Slides/Notes|Recordings|Challenges|Workspaces|
+|-----| ------------- |---------------------|----------|-------|
+|W7D2|[Express](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-4/express)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/MV7xVdAa-MAR0iKlmOc9Q1jh6WeGa2QapmbN0FA8r8lv2QkPjAc35sTqdDHgtNCO.zHmHSUPUy7g5zpqn) Passcode: Os0Q4*@#  ||
+
+---
+
+## Week 6: Async JS, SQL, and Sequelize
+
+|Day|Slides/Notes|Recordings|Challenges|Workspaces|
+|-----| ------------- |---------------------|----------|-------|
+|W3D1|[Async Javascript](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-3/asynchronous-js)|||
+|W3D2|[SQL](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-3/sql)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/q-o4bY3wlwB4v7YrOvgdN5acWMKbkAb-eqcMiv-p4qs8FH5x7WoPHmxTeJ8pxYnH.7J37XSgeMg-4lW9q) Passcode: 1hs0%J&x||
+|W3D3|[Sequelize](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-3/sequelize)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/ax_6wCqstZ2yWyr_KqNXOGLdfmWieTj8UuJTgAFuyyeN_QBNnXNN0WWnIssUMxYk.4gRTcLIjqRQDC4Qc) Passcode: j=hE74#6||
+|W3D4|[Sequelize Associations](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-3/sequelize-associations)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/5uTXPtX36K2s2vEzo4uXTZ9NvyPyNuEhdBUPiHhsy1avd27Fuc8_yK90VXlSoVKH.BfcI7AOev9wX18Na) Passcode: ks^Vj9a^||
+---
+
+## Week 5: UML, TDD, and OOP
+
+|Day|Slides/Notes|Recordings|Challenges|Workspaces|
+|-----| ------------- |---------------------|----------|-------|
+|W5D2|[Node](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-1/02-node)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/rdDDCrqiIgyZOxDtmRdsT-z7xwu-HxE-MzQHXKfkcO0fyag00Nxowg6SgpbFcPDe.4SLM5mvJdSavKbI5) Passcode: C@&*7PZd||
+|W5D3|[TDD-Classes](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-1/03-TDD-Classes)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/eCWfZ64Yv9SCa5T5pIiPNU-8BmvwkTwbiSvzM2Lr3sZcUL5wdynqEKSeZ-08tgu8.kmc1CtCez8rgyyWZ) Passcode: XG=4p7R^||
+---
+
+## Week 4: HTML Project (no recordings)
+
+
 ## Week 3: Intro to HTML & CSS
 
 |Day|Slides/Notes|Recordings|Challenges|Workspaces|
