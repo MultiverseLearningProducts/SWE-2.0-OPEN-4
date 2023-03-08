@@ -44,3 +44,16 @@ Where are we in our fullstack journey?
 [ server side/ backend ]    [client-side/ front end]
 -----------------------------------
 DEMO:
+
+
+
+
+------------
+CRUD - 
+
+Operations   HTTP method    Sequelize Methods
+       
+Create       POST             Model.create()  [x]
+Read         GET              Model.findByPk()  Model.findAll() [x]
+Update       PUT/PATCH        Model.update() [x]
+Delete       DELETE           Model.destroy() [x]
