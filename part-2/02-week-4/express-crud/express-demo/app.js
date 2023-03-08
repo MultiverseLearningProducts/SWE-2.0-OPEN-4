@@ -1,27 +1,18 @@
 //imports
 const express = require('express')
 const app = express() //create an instance of express
-const port = 3000
+const port = 8080
 
+app.use(express.json())
 
 //import our models 
 const { Band, Musician } = require('./server/models/index')
 
-//define your routes / endpoints
-// app.httpMethod(request url path, callbackfunction)
+//get routes
 app.get('/', (req, res) => {
-    //define your enpoint logic
     res.send('Hello World!')
 })
 
-app.get('/greeting', (req, res) => {
-    //define your enpoint logic
-    res.send('Hello There this is another greeting!!!!')
-})
-
-//define an endpoint that will return back to the client all the musicians
-// always use nouns, broad to specific
-// async await
 app.get('/musicians', async (req, res) => {
     try {
        const musicians = await Musician.findAll()
@@ -32,8 +23,6 @@ app.get('/musicians', async (req, res) => {
     }
 })
 
-//request params - define a dynamic request url /:
-//we want to request only one musician from our db
 app.get('/musicians/:id', async (req, res) => {
     try {
         const id = req.params.id // this is from the request url
@@ -45,6 +34,37 @@ app.get('/musicians/:id', async (req, res) => {
     }
 })
 
+app.get('/bands', async (req, res) => {
+    try {
+       const bands = await Band.findAll()
+       res.status(200).json(bands)
+    } catch (error) {
+       console.error(error)
+       res.status(404).send('Sorry there are no bands in our database')
+    }
+})
+
+app.get('/bands/:id', async (req, res) => {
+    try {
+        const id = req.params.id // this is from the request url
+        const foundBand = await Band.findByPk(id)
+        res.status(200).json(foundBand)
+    } catch (error) {
+        console.error(error)
+        res.status(404).send('Sorry no band was found')
+    }
+})
+
+//POST
+
+
+//PUT
+
+
+//PATCH
+
+
+//DELETE
 
 
 //define where your express server will be listening to
