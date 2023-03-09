@@ -1,0 +1,27 @@
+{
+  "name": "musicians-bands",
+  "version": "1.0.0",
+  "description": "A Sequelize DB for bands to organize their songs and musicians",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "seed": "node server/seeders/seed.js",
+    "start-dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jest": "27.5.1",
+    "sequelize": "^6.21.4",
+    "sqlite3": "^5.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
