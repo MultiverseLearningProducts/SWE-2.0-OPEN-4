@@ -60,5 +60,18 @@ Delete       DELETE           Model.destroy() [x]
 
 ------------
 Express Router
+    - Is a powerful middleware that allows to modularize our route handling logic into separate files or directories. Helps us organize our code as our application scales
+
+
+Game Plan:
+    1. Create routes directory [x]
+    2. Bring the routes from app.js into bandRoutes.js and musicianRoutes.js [x]
+    3. Configure express router for each of the routes files [x]
+    4. Re-import our routes into app.js 
+        5.** set a prefix for your request url and clean up the routes from each file
+
+
+
 Express-Validator
+    - A package that provides a set of middleware functions for validating incoming request data. It helps us check the incoming requests from the client side is meeting specific criterias (email format, if fields are left empty etc)
 

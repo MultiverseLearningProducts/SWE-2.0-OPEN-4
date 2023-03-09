@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
+    "express-validator": "^6.15.0",
     "jest": "27.5.1",
     "sequelize": "^6.21.4",
     "sqlite3": "^5.0.11"
