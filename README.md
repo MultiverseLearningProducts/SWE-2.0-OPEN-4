@@ -8,7 +8,8 @@ Materials for the SWE2.0(Open)4-US cohort
 
 |Day|Slides/Notes|Recordings|Challenges|Workspaces|
 |-----| ------------- |---------------------|----------|-------|
-|W7D2|[Express](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-4/express)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/MV7xVdAa-MAR0iKlmOc9Q1jh6WeGa2QapmbN0FA8r8lv2QkPjAc35sTqdDHgtNCO.zHmHSUPUy7g5zpqn) Passcode: Os0Q4*@#  ||
+|W7D2|[Express](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-4/express)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/4LYEjZZDenWItpY9iosvHJ0amJyBVyCr7Z0rQX6Jry9Fdqy26Kg0jB1oLKPfYVJ0.U5AvQt57mLwtgKgo) Passcode: 1Zzfdd+4  ||
+|W7D4|[Express Router and Validator](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-4/express-router)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/f2nQyJ94eje5lQkWBAcEd3eqdYxW1EtNVtSt88ghqh2U6zxZmXCDw8a_ObJwSHws.SIxYhD1EdVl5nilg) Passcode: K@268a?w ||
 
 ---
 
