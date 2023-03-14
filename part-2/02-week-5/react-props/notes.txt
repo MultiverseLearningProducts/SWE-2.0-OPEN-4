@@ -1,0 +1,27 @@
+Lesson Objectives
+--------------------
+
+1. Learn how to integrate React to an existing Node project.
+2. Learn about Parcel bundler. Webpack
+3. Learn about functional components.
+4. Learn about component heiarchy and relationships.
+5. Learn about props and how to pass them to child components.
+
+----------------------------------------------------
+
+part 1 - Setting up React with an existing node project
+
+1. npm i react react-dom parcel-bundler
+2. create a client folder
+3. create our index.html
+4. set up an entry point to our app
+5. set up our index.js file - this file is going to help us render our react into our html file
+6. Create our top level component - App.js
+** 
+
+
+----------------------------------------------------
+[break]
+----------------------------------------------------
+
+part 2 - Exploring React concepts
