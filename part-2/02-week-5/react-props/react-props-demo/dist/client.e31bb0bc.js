@@ -28863,7 +28863,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"App.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"Card.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28872,15 +28872,43 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//define the function
+//JSX - allows us to write html-like tags in our javascript
+function Card(props) {
+  var name = props.name;
+  return /*#__PURE__*/_react.default.createElement("h3", null, "Hello World! This is: ", name);
+}
+
+//export the function - export default 
+var _default = Card;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _Card = _interopRequireDefault(require("./Card"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 //import
 
 //functional component
+//If you are return multi-lines, we need to wrap our jsx with a react fragment
 function App() {
-  return /*#__PURE__*/_react.default.createElement("h1", null, "Hello World!");
+  // const name = 'Ciara'
+  var names = ['Expedia', 'Double Verify', 'Fiserv'];
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello World!"), names.map(function (name, idx) {
+    return /*#__PURE__*/_react.default.createElement(_Card.default, {
+      id: idx,
+      name: name
+    });
+  }));
 }
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Card":"Card.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28921,7 +28949,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65322" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50289" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
