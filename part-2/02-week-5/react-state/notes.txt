@@ -19,3 +19,19 @@ Warm up exercise:
         -styles.css
 
 2. Create a new functional component called Counter.js and store that in your new components folder.  
+
+----------------------------------------------------
+
+Q: What is state?
+- In React, 'state' is used to store and manage data that changes over time within a component.
+- State is used to update and render a component dynamically. 
+- When the state of a component changes, React will re-render the component with the updated state
+
+
+- useState - hook <- to store and manager state in our functional components
+
+Q: What is a hook?
+- A react function that allows you to use state and other React features in a functional component.
+
+Q: What is the difference between props vs state?
+- Props are used to pass data between components, whereas state represents the internal state of a component.

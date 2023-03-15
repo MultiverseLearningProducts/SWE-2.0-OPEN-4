@@ -1,6 +1,7 @@
 //import
 import React from 'react'
-import Card from './Card'
+import Card from './components/Card'
+import Counter from './components/Counter'
 import '../client/styles.css' //adding css to your react
 
 //functional component
@@ -12,6 +13,7 @@ function App() {
     return (
         <>
         <div className="container">
+            <Counter />
             {
                 names.map((name , idx) => {
                     return <Card id={idx} name={name} />

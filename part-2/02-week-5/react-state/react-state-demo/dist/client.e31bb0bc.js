@@ -28863,7 +28863,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"Card.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"components/Card.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28883,6 +28883,43 @@ function Card(props) {
 
 //export the function - export default 
 var _default = Card;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/Counter.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = require("react");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+//import useState hook
+
+function Counter() {
+  //declare a state variable - set an initial value of your state
+  //state   function that updates state
+  var _useState = (0, _react.useState)(0),
+    _useState2 = _slicedToArray(_useState, 2),
+    count = _useState2[0],
+    setCount = _useState2[1];
+
+  //define a function to update the count state variable
+  function updateCount() {
+    //use setCount to update our state
+    setCount(count + 1);
+  }
+  return /*#__PURE__*/_react.React.createElement("div", null, /*#__PURE__*/_react.React.createElement("p", null, "You clicked the button ", count, " times!"), /*#__PURE__*/_react.React.createElement("button", {
+    onClick: function onClick() {
+      return updateCount;
+    }
+  }, "Click Me!!"));
+}
+var _default = Counter;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
@@ -28947,7 +28984,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
-var _Card = _interopRequireDefault(require("./Card"));
+var _Card = _interopRequireDefault(require("./components/Card"));
+var _Counter = _interopRequireDefault(require("./components/Counter"));
 require("../client/styles.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 //import
@@ -28961,7 +28999,7 @@ function App() {
   var names = ['Expedia', 'Double Verify', 'Fiserv'];
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, names.map(function (name, idx) {
+  }, /*#__PURE__*/_react.default.createElement(_Counter.default, null), names.map(function (name, idx) {
     return /*#__PURE__*/_react.default.createElement(_Card.default, {
       id: idx,
       name: name
@@ -28970,7 +29008,7 @@ function App() {
 }
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Card":"Card.js","../client/styles.css":"styles.css"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./components/Card":"components/Card.js","./components/Counter":"components/Counter.js","../client/styles.css":"styles.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -29011,7 +29049,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57836" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64334" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
