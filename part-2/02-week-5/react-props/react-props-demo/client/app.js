@@ -10,12 +10,14 @@ function App() {
 
     return (
         <>
-            <h1>Hello World!</h1>
-            {
-                names.map((name , idx) => {
-                    return <Card id={idx} name={name} />
-                })
-            }
+            <div className="container">
+                <h1>Hello World!</h1>
+                {
+                    names.map((name , idx) => {
+                        return <Card id={idx} name={name} />
+                    })
+                }
+            </div>
         </>
     )
 }

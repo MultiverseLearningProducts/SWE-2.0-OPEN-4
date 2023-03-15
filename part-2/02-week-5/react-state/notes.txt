@@ -1,0 +1,21 @@
+Lesson Objectives
+--------------------
+
+1. Learn what state is.
+2. Learn how to update state in a functional component.
+3. Learn about react hooks.
+
+----------------------------------------------------
+
+Warm up exercise:
+
+1. Move all of your existing components aside from your app.js top level component into a folder called components.
+    Your folders structure should look like this:
+        /client
+            /components
+                - Card.js
+        -index.html
+        -index.js
+        -styles.css
+
+2. Create a new functional component called Counter.js and store that in your new components folder.  

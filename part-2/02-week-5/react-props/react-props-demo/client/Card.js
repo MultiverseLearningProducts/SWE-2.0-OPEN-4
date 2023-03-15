@@ -5,7 +5,9 @@ import React from 'react'
 function Card(props) {
     const {name} = props
     return (
-        <h3>Hello World! This is: {name}</h3>
+        <div className="card">
+            <h3>Hello World! This is: {name}</h3>
+        </div>
     )
 }
 
