@@ -18,7 +18,7 @@ function Card(props) {
                 throw new Error('delete was not successful')
             } else {
                alert('BAND DELETED!')
-               getAllBands() 
+               getAllBands() //this will cause a re-render in our parent component
             }      
         }).catch(error => console.error(error))
     }
