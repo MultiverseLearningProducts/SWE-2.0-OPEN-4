@@ -28885,6 +28885,82 @@ function Card(props) {
 //export the function - export default 
 var _default = Card;
 exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"CardForm.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("react"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function CardForm() {
+  var _useState = (0, _react.useState)(''),
+    _useState2 = _slicedToArray(_useState, 2),
+    bandName = _useState2[0],
+    setBandName = _useState2[1];
+  var _useState3 = (0, _react.useState)(''),
+    _useState4 = _slicedToArray(_useState3, 2),
+    genre = _useState4[0],
+    setGenre = _useState4[1];
+
+  //setBandNameChange
+  function setBandNameChange(event) {
+    //update the bandName state hook
+    setBandName(event.target.value);
+  }
+
+  //setGenreNameChange
+  function setGenreNameChange(event) {
+    setGenre(event.target.value);
+  }
+
+  //fetch - POST
+  function handleSubmit(event) {
+    event.preventDefault(); //<- prevents refreshing the page
+    var bandData = {
+      name: bandName,
+      genre: genre
+    }; //<- req.body {name: bandName, genre: genre}
+    console.log('BAND DATA? ', bandData);
+    //define our fetch request
+    fetch('http://localhost:8080/bands', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(bandData)
+    }).then(function () {
+      alert('A newBand created!');
+      setBandName('');
+      setGenre('');
+    }).catch(function (error) {
+      return console.error(error);
+    });
+  }
+  return /*#__PURE__*/_react.default.createElement("form", {
+    onSubmit: handleSubmit
+  }, /*#__PURE__*/_react.default.createElement("label", null, "Band Name:", /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    value: bandName,
+    onChange: setBandNameChange
+  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("label", null, "Genre:", /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    value: genre,
+    onChange: setGenreNameChange
+  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
+    type: "submit"
+  }, "Create Band!"));
+}
+var _default = CardForm;
+exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
@@ -28894,6 +28970,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _Card = _interopRequireDefault(require("./Card"));
+var _CardForm = _interopRequireDefault(require("./CardForm"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -28940,7 +29017,7 @@ function App() {
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, bands.map(function (_ref, idx) {
+  }, /*#__PURE__*/_react.default.createElement(_CardForm.default, null), bands.map(function (_ref, idx) {
     var name = _ref.name,
       genre = _ref.genre;
     return /*#__PURE__*/_react.default.createElement(_Card.default, {
@@ -28952,7 +29029,7 @@ function App() {
 }
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Card":"Card.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Card":"Card.js","./CardForm":"CardForm.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28993,7 +29070,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50637" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62668" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

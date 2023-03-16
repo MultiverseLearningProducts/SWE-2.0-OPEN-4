@@ -1,6 +1,7 @@
 //import
 import React, {useState, useEffect} from 'react'
 import Card from './Card'
+import CardForm from './CardForm'
 
 //functional component
 //If you are return multi-lines, we need to wrap our jsx with a react fragment
@@ -35,6 +36,7 @@ function App() {
     return (
         <>
             <div className="container">
+                <CardForm />
                 {
                     bands.map(({name, genre}, idx) => {
                         return <Card key={idx} name={name} genre={genre}/>
