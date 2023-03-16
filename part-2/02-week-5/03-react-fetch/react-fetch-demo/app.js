@@ -2,6 +2,7 @@
 const express = require('express')
 const app = express() //create an instance of express
 const port = 8080
+const cors = require('cors')
 
 //import routes
 const musicanRoutes = require('./server/routes/musicianRoutes')
@@ -9,6 +10,7 @@ const bandRoutes = require('./server/routes/bandRoutes')
 
 
 app.use(express.json()) //exposes our req.body to our server
+app.use(cors())
 
 //import your routes here
 app.use('/musicians', musicanRoutes)

@@ -28875,8 +28875,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //define the function
 //JSX - allows us to write html-like tags in our javascript
 function Card(props) {
-  var name = props.name;
-  return /*#__PURE__*/_react.default.createElement("h3", null, "Hello World! This is: ", name);
+  var name = props.name,
+    genre = props.genre;
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/_react.default.createElement("p", null, "This band's name is: ", name), /*#__PURE__*/_react.default.createElement("p", null, "This band's genre is: ", genre));
 }
 
 //export the function - export default 
@@ -28889,22 +28892,63 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 var _Card = _interopRequireDefault(require("./Card"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//import
-
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 //functional component
 //If you are return multi-lines, we need to wrap our jsx with a react fragment
 function App() {
-  // const name = 'Ciara'
-  var names = ['Expedia', 'Double Verify', 'Fiserv'];
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello World!"), names.map(function (name, idx) {
-    return /*#__PURE__*/_react.default.createElement(_Card.default, {
-      id: idx,
-      name: name
+  //define our hook that will store our band data
+  var _useState = (0, _react.useState)([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    bands = _useState2[0],
+    setBands = _useState2[1];
+
+  //useEffect - this is a react hook that allows you to perform side effects in functional components. Some of these side effects include: API calls, updating the DOM, setting up event listeners. The hook lets you manage these side effects by defining a function that will be executed after every render cycle.
+  //1.fetch - get - get all the bands 
+  //2. store the bands as a hook in our functional component.
+
+  (0, _react.useEffect)(function () {
+    fetch('http://localhost:8080/bands', {
+      method: "GET",
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(function (response) {
+      return response.json();
+    }).then(function (data) {
+      return setBands(data);
+    }).catch(function (error) {
+      return console.error(error);
     });
-  }));
+  }, []);
+
+  //1. seed my db [x]
+  //2. run my backend [x]
+  //3. on a separate terminal run the front end
+
+  //CORS - cross-origin resource sharing - 
+  //1. npm i cors
+
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, bands.map(function (_ref, idx) {
+    var name = _ref.name,
+      genre = _ref.genre;
+    return /*#__PURE__*/_react.default.createElement(_Card.default, {
+      key: idx,
+      name: name,
+      genre: genre
+    });
+  })));
 }
 var _default = App;
 exports.default = _default;
@@ -28949,7 +28993,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50289" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50637" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
