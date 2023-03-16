@@ -13,7 +13,7 @@ function App() {
         //1.fetch - get - get all the bands 
         //2. store the bands as a hook in our functional component.
 
-    useEffect(() => {
+    function getAllBands() {
         fetch('http://localhost:8080/bands', {
             method: "GET",
             headers: {
@@ -22,6 +22,11 @@ function App() {
         }).then(response => response.json())
         .then(data => setBands(data))
         .catch(error => console.error(error))
+    }
+
+
+    useEffect(() => {
+        getAllBands()
     }, [])
 
 
@@ -38,8 +43,8 @@ function App() {
             <div className="container">
                 <CardForm />
                 {
-                    bands.map(({name, genre}, idx) => {
-                        return <Card key={idx} name={name} genre={genre}/>
+                    bands.map(({name, genre, id}, idx) => {
+                        return <Card key={idx} name={name} genre={genre} id={id} getAllBands={getAllBands}/>
                     })
                 }
             </div>

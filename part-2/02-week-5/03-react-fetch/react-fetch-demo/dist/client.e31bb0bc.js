@@ -28876,10 +28876,37 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //JSX - allows us to write html-like tags in our javascript
 function Card(props) {
   var name = props.name,
-    genre = props.genre;
+    genre = props.genre,
+    id = props.id,
+    getAllBands = props.getAllBands;
+  console.log('CARD! ', props);
+
+  //delete fetch request
+  function deleteBand(id) {
+    fetch("http://localhost:8080/bands/".concat(id), {
+      method: "DELETE",
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(function (res) {
+      if (!res.ok) {
+        throw new Error('delete was not successful');
+      } else {
+        alert('BAND DELETED!');
+        getAllBands();
+      }
+    }).catch(function (error) {
+      return console.error(error);
+    });
+  }
+  function handleDelete() {
+    deleteBand(id);
+  }
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "card"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "This band's name is: ", name), /*#__PURE__*/_react.default.createElement("p", null, "This band's genre is: ", genre));
+  }, /*#__PURE__*/_react.default.createElement("p", null, "This band's name is: ", name), /*#__PURE__*/_react.default.createElement("p", null, "This band's genre is: ", genre), /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleDelete
+  }, "Delete band"));
 }
 
 //export the function - export default 
@@ -28993,7 +29020,7 @@ function App() {
   //1.fetch - get - get all the bands 
   //2. store the bands as a hook in our functional component.
 
-  (0, _react.useEffect)(function () {
+  function getAllBands() {
     fetch('http://localhost:8080/bands', {
       method: "GET",
       headers: {
@@ -29006,6 +29033,9 @@ function App() {
     }).catch(function (error) {
       return console.error(error);
     });
+  }
+  (0, _react.useEffect)(function () {
+    getAllBands();
   }, []);
 
   //1. seed my db [x]
@@ -29019,11 +29049,14 @@ function App() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement(_CardForm.default, null), bands.map(function (_ref, idx) {
     var name = _ref.name,
-      genre = _ref.genre;
+      genre = _ref.genre,
+      id = _ref.id;
     return /*#__PURE__*/_react.default.createElement(_Card.default, {
       key: idx,
       name: name,
-      genre: genre
+      genre: genre,
+      id: id,
+      getAllBands: getAllBands
     });
   })));
 }
@@ -29070,7 +29103,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62668" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57871" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
