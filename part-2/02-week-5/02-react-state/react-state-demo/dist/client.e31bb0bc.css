@@ -1,0 +1,19 @@
+* {
+    background-color: rgb(224, 224, 224);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap to next row if space is insufficient */
+    align-items: center; /* Aligns items along the cross axis */
+}
+
+.card {
+    margin: 10px; /* Adds some margin between each div */
+    padding: 10px; /* Adds some padding inside each div */
+    height: auto;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid #b8009f; /* Adds a border around each div */
+}
+
+/*# sourceMappingURL=/client.e31bb0bc.css.map */
