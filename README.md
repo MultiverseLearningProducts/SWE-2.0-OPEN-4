@@ -4,6 +4,15 @@
 
 Materials for the SWE2.0(Open)4-US cohort
 
+## Week 8: React
+
+|Day|Slides/Notes|Recordings|Challenges|Workspaces|
+|-----| ------------- |---------------------|----------|-------|
+|W8D2|[React Props](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-5/01-react-props)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/czFPK2AykovKgb7CCE1R54yjVITLVj2m7INJWo1MasxU0kRdMGOGgFTyIx1L9GFk.hZZUMIq1ShfhgoVO) Passcode: +Dqa!H3X  ||
+|W8D3|[React Events and State](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-5/02-react-state)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/6QCE3WqNqi-QBs_Ccc-kuxdQ-EpGgVVdDG8GKQBeRsWbgs-Doq47zPAVVKKgKFF3.Tc85N6CIZNB665bF) Passcode: T@7f2n2x ||
+|W8D4|[React Fetch](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/part-2/02-week-5/03-react-fetch)|[Workshop & more](https://multiverse-io.zoom.us/rec/share/BoKq5BeQP8cwHOdDTLDZjkDekuaBQpm0zfYEetDYCp06Zc2J-TR4XLvvezssWs6L.28kMSMPGa9peF5Zz) Passcode: =DDeB4&# ||
+---
+
 ## Week 7: Web Servers and Express
 
 |Day|Slides/Notes|Recordings|Challenges|Workspaces|
