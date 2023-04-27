@@ -32,7 +32,7 @@ Q: Why would it be important to store confidential information in a 'cryptic' wa
 
 ## Encryption
     - Encryption is when you take a cypher [rule] {example: cesarean cipher} to mix up the data. You can use the same cipher to de-cipher it
-    
+
     Example of Encrypting:
     - A -> [move two characters to the right] -> C
     Example of Decrypting:
@@ -45,22 +45,43 @@ Q: Why would it be important to store confidential information in a 'cryptic' wa
     ** Think about the pros and cons.
 
 ## Hashing
+    ## How does hashing work
     - Hashing is a process that takes an input -> that input is put through a hashing function that always produces a fixed length result -> that result is called a 'hash'
     - Hashing is a one way process -> once the data gets 'hashed' we cannot reverse the process, making hashing a much more preferred way to protect data. 
 
     ** Think about this: If we store a 'hashed' password in our database, how can we verify a user that is trying to log in with a password that they attempt to input?
 
 ------------------------------------------------------------------------
-## How does hashing work
-
-
 ## From user input to database
+    - When storing user information -> refrain from storing the plaintext version into the database.
+    - We typically store sensitive information as a hashed string in our database.
 
+    User inputs information ->
+
+    user: {
+        username: abc123
+        password: thisIsAPassword
+    }
+
+    user2: {
+        username: hello123
+        password: thisIsAPassword
+    }
+
+    database: {
+        username: abc123
+        password: 2b9d16f016213d8694e05427b66ffc3e30580e3c62f2c4b2254b3baecdbb8450
+    }
+
+    user password -> take the plaintext and pass it through a hashing algorithm -> we compare the user input hash with the hash that is stored in our database
+
+    If two or more users share the same hashed password, this is not very safe. We want to maximize the uniqueness of a user's data regardless if they have identical matching passwords
 
 ## Salting 
 
+   -Salting is an extra step before we hash our plaintext where the plaintext hashed with a prepended extra hash to create uniqueness to the hashed string.
 
-### Crypto -> 
+### Crypto -> Hashing
 
-### Bcrypt -> 
+### Bcrypt -> Salt + Hashing
 
