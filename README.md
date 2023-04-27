@@ -4,6 +4,17 @@
 
 Materials for the SWE2.0(Open)4-US cohort
 
+## BACKEND
+
+### Hash [https://multiverse-io.zoom.us/rec/share/w5wh-yuYDEM-WZcys9ftOS3flqwS1au7yYFtRcwlJ1VejVb_3tNXUGsrUghbZywy.XK0S7hHQETghYeS7?startTime=1682609795000]
+
+
+
+
+
+
+
+
 ## Week 8: React
 
 |Day|Slides/Notes|Recordings|Challenges|Workspaces|
