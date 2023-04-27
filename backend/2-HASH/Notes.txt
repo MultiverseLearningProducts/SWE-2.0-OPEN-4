@@ -13,26 +13,51 @@
 Protecting Data in a database
 
 Q: Why is it important to protect our data?
+    - no jail time - if we compromise client data = jail time [Nathan]
+    - do not want our data to be used in a malicious way [Sonam]
+    - same as above [Fatima]
 Q: Why would it be important to store confidential information in a 'cryptic' way?
+    - we want to be able to 'hide' the information in our database so if there were to be a malicious attack to try to get our info, its not easy to read or understand therefore, adding a layer of protection [Jhonny]
 
 ## Encoding
+    - Encoding maps out your characters to other characters.
+    - 1-1 relationship
 
+    Examples:
+    Hexidecimal values -> RGB values
+    #FF -> 255
+    #AABBFF -> __ __ 255
+
+    ** Think about the pros and cons when using encoding to protect your information
 
 ## Encryption
+    - Encryption is when you take a cypher [rule] {example: cesarean cipher} to mix up the data. You can use the same cipher to de-cipher it
+    
+    Example of Encrypting:
+    - A -> [move two characters to the right] -> C
+    Example of Decrypting:
+    - C -> [move two characters to the left] -> A
 
+    - Because you can reverse the ecrypted information back to the original -> this process is also known as a two way process
+
+    ** Think about what is the difference between encoding and encryption.
+    ** Think about the applications you can use for encryption.
+    ** Think about the pros and cons.
 
 ## Hashing
+    - Hashing is a process that takes an input -> that input is put through a hashing function that always produces a fixed length result -> that result is called a 'hash'
+    - Hashing is a one way process -> once the data gets 'hashed' we cannot reverse the process, making hashing a much more preferred way to protect data. 
+
+    ** Think about this: If we store a 'hashed' password in our database, how can we verify a user that is trying to log in with a password that they attempt to input?
 
 ------------------------------------------------------------------------
 ## How does hashing work
-
 
 
 ## From user input to database
 
 
 ## Salting 
-
 
 
 ### Crypto -> 
