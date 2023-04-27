@@ -1,0 +1,41 @@
+# Hashing: Securing passwords using Salting and Hashing
+
+## Objectives - what are we going to learn today?
+
+- An overview of how we can protect data []
+- Encoding, Encryption, Hashing []
+- What is Hashing? []
+- Why Hashing? []
+- What is salting? []
+- How does salting work? []
+
+------------------------------------------------------------------------
+Protecting Data in a database
+
+Q: Why is it important to protect our data?
+Q: Why would it be important to store confidential information in a 'cryptic' way?
+
+## Encoding
+
+
+## Encryption
+
+
+## Hashing
+
+------------------------------------------------------------------------
+## How does hashing work
+
+
+
+## From user input to database
+
+
+## Salting 
+
+
+
+### Crypto -> 
+
+### Bcrypt -> 
+
