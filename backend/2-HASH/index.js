@@ -18,13 +18,24 @@ const run = async () => {
     /* *************** START DEMO *************** */
     
     //hashing without salting - see what this looks like in our db [crypto]
-  
+    // const hashedNoSalt = await crypto.createHash('sha256').update(user.password).digest('base64')
+    // const hashedNoSalt2 = await crypto.createHash('sha256').update(user2.password).digest('base64')
+
+
+    // console.log('USER1 ', hashedNoSalt)
+    // console.log('USER2 ', hashedNoSalt2)
 
     //hashing with salting - see what this looks like in our db [bcrypt]
+    const bcryptHash = await bcrypt.hash(user.password, SALT_COUNT)
+    const bcryptHash2 = await bcrypt.hash(user2.password, SALT_COUNT)
 
+    console.log('USER1 ', bcryptHash)
+    console.log('USER2 ', bcryptHash2)
 
     //storing our user information (username + hashedpassword) in our database
 
+    await User.create({username: user.username, password: bcryptHash}) // creates a user with our salted and hashed password
+    await User.create({username: user2.username, password: bcryptHash2})
 
     
   } catch (error) {
