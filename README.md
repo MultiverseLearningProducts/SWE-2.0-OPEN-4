@@ -6,14 +6,10 @@ Materials for the SWE2.0(Open)4-US cohort
 
 ## BACKEND
 
-[Hash] (https://multiverse-io.zoom.us/rec/share/w5wh-yuYDEM-WZcys9ftOS3flqwS1au7yYFtRcwlJ1VejVb_3tNXUGsrUghbZywy.XK0S7hHQETghYeS7?startTime=1682609795000)
-
-
-
-
-
-
-
+|Day|Slides/Notes|Recordings|Challenges|Workspaces|
+|-----| ------------- |---------------------|----------|-------|
+|HASH|[React Props](https://github.com/MultiverseLearningProducts/SWE-2.0-OPEN-4/tree/main/backend/2-HASH)|[Recording](https://multiverse-io.zoom.us/rec/share/Qc4ieQmS9SJI5oTABZK0LouYjSidrpYR_t6TDqbMo4g_65tqklxk7VKdzto58Y7U.NlwioqQ8Gf4Ibn7_%20Passcode:%20@mV123321) ||
+---
 
 ## Week 8: React
 
