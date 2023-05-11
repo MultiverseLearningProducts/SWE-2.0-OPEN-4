@@ -63,11 +63,15 @@ define a start script
     - created enviornmental variables for the secret,baseURL,clientID,issuerBaseURL
 
 3. File for my routes - routes.js
+    -
 
 4. Middleware/auth.js   
     - auth a function that is going to determine whether or not a user has been authenticated
+
 5. Controllers
     - file - login / logout
+
+Main Routes
     - file - protected routes / unprotected routes
 
 

@@ -4,7 +4,7 @@ const cors = require('cors')
 const express = require('express')
 const { auth } = require('express-openid-connect') // req.oidc //users information
 const morgan = require('morgan') // can see our requests in our terminal
-//const routes = require('./routes')
+const routes = require('./routes')
 
 
 //create our express app
@@ -40,14 +40,10 @@ const config = {
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 
-// req.isAuthenticated is provided from the auth router
-app.get('/', (req, res) => {
-  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
-});
+app.use('/', routes)
 
 
 /*      configure our OIDC code         */
-
 
 app.listen(PORT, () => {
     console.log(`Server is up and running on port http://localhost:${PORT}`)
