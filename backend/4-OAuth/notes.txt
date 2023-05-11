@@ -1,0 +1,39 @@
+Pre-read:
+
+OAuth:
+
+An authorization framework that grants third-party applications access to a user's resources without sharing their credentials. OAuth focuses on providing delegated access through access tokens, allowing third-party applications to access protected resources on behalf of the user.
+    example 1: Allows Spotify to access the user's Google profile information by granting Spotify permissions. It focuses on authorization (giving access).
+
+    example 2: It's like giving a friend a key to your house so they can borrow something while you're not home. You trust them to only take what they need and not snoop around.
+
+OpenID Connect (OIDC): 
+
+An identity layer built on top of OAuth that extends its functionality to include user authentication. OIDC introduces ID tokens containing user information, allowing third-party applications to authenticate the user and access their basic profile information. It combines the authorization features of OAuth with additional authentication capabilities.
+
+    Example 1 : Provides a way for Spotify to authenticate the user (confirm their identity) using their Google account information. It adds an extra layer for user authentication on top of OAuth.
+
+    Example 1: It's like giving a friend a special key that not only lets them borrow something from your house but also tells them who you are (your name and a few details about you). They can use this key to make sure it's really you and to learn some basic info about you.
+
+
+OAuth + OpenID workflow:   
++----------+                       +--------------+                       +--------------+
+|          |---- Request Access -->|              |---- Redirect to OP -->|  OAuth       |
+|  End     |                       | Relying Party|                       |  OpenID      |
+|  User    |<-- Redirect to RP ----|   (RP)       |<-- Authenticate User--|  Provider    |
+|          |                       |  spotify     |                       |   (OP)Google |
++----------+                       +--------------+                       +--------------+
+
+- A user wants to create a Spotify account or log into an existing one using their Google account for authentication.
+
+- The user selects the "Log in with Google" option on the Spotify login page.
+
+- The user is redirected to the Google authorization page, where they log in with their Google credentials. This is the OAuth authorization step, where the user grants Spotify the necessary permissions (scopes) to access their Google profile information.
+
+- After logging in and granting permissions, Google (acting as the OAuth authorization server) issues an access token to Spotify (acting as the OAuth client) that allows Spotify to access the user's profile information on behalf of the user.
+
+- OpenID Connect comes into play when Google also issues an ID token to Spotify, which is used to authenticate the user and access their basic profile information from Google.
+
+- Spotify uses the ID token to authenticate the user and create a new account or log them into an existing one linked with their Google account. OAuth allows Spotify to access the user's Google profile information using the access token provided.
+
+-------------------------------------------------
