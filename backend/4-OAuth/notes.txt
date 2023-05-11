@@ -37,3 +37,42 @@ OAuth + OpenID workflow:
 - Spotify uses the ID token to authenticate the user and create a new account or log them into an existing one linked with their Google account. OAuth allows Spotify to access the user's Google profile information using the access token provided.
 
 -------------------------------------------------
+Structure of our Demo:
+
+Goal: Integrate OAuth + OIDC to our API
+
+1. Create an account on Auth0 [x]
+    applications -> applications -> create application -> regular web applications -> node -> integrate with my app
+
+
+npm install [x]
+- express 
+- express-openid-connect 
+- cors
+- dotenv
+- morgan 
+- nodemon
+
+define a start script
+"start-dev": "nodemon index.js"
+
+
+
+2. Create a server file - index.js [x]
+    - imported the config object from Auth0
+    - created enviornmental variables for the secret,baseURL,clientID,issuerBaseURL
+
+3. File for my routes - routes.js
+
+4. Middleware/auth.js   
+    - auth a function that is going to determine whether or not a user has been authenticated
+5. Controllers
+    - file - login / logout
+    - file - protected routes / unprotected routes
+
+
+
+---------------
+Extension:
+- figure out how to test our routes on postman
+
