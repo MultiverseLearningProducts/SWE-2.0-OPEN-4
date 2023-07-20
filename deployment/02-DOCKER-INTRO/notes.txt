@@ -1,0 +1,19 @@
+Docker Intro
+
+NOTE: For this demo, please don't run `npm install` on your local terminal. We want to simulate what it is like to not have dependencies set up on our local machines, so that we can fully demonstrate that Docker can take care of these dependencies for us. We put `npm install` in our Dockerfile so that the running container (ran from the built image) will have those dependencies all set.
+
+What is Docker?
+- tool to build and run apps in a standardized streamlined way, regardless of what's on our computer 
+
+Docker is important bc it doesn't care about what's on our computer, when it comes to onboarding or just working together with other devs, we don't have to worry about wrangling package versions, OS, etc
+
+What is an image, what is a container, how are they different?
+- image is the blueprint to set up what we want the runtime env to look like
+- container is the running application in the runtime env
+
+What is the difference between docker build and docker run?
+
+- Docker build prepares our containerized app to run by creating an image from our customized Dockerfile, and docker run actually boots up the application.
+
+Why is it necessary to publish a port (using -p) when running Docker app?
+- Without the published port on the outside, we won't be able to see anything going on inside the container (even though we've 'exposed' the port in our Dockerfile). The container is isolated. We need to make sure that a port outside of the container is publishing what is being exposed from inside the container.

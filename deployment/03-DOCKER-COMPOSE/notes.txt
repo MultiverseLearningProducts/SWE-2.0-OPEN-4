@@ -1,0 +1,32 @@
+Some useful Docker Commands:
+
+Generate list of containers - docker ps ( container ids )
+Stop a container - docker stop [container_id]
+Generate list of images - docker images 67gfty5535
+Delete an image - docker rmi 67gfty5535
+Delete a container - docker rm 87537rgsf37
+
+Run a container with interactivity in the terminal - "-it" flag
+
+Start applications from docker-compose.yml - docker-compose up
+Stop the docker-compose container and remove images - docker-compose down --rmi
+
+Networks & Volumes
+-Networks allow containers to access endpoints in other containers
+docker network create (create a Docker Network)
+docker network connect/disconnect
+docker network ls
+docker network rm
+
+-volumes allow containers to persist data between containers
+docker volume create
+docker volume inspect
+docker volume ls
+docker volume rm
+docker volume prune
+
+Security w/ Docker:
+Isolation
+Security Scanning
+Docker Secrets
+Network Security
